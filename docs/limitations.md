@@ -17,8 +17,10 @@
   exacta. Esas herramientas se detectan o quedan como dependencia explícita.
 - La memoria comprueba registros y hashes, no la verdad de pruebas. La verificación
   formal requiere archivos, versión, comando y log reales además de revisión.
-- El acceso remoto de GitHub está pendiente por DNS/conectividad del entorno.
-  Debe inspeccionarse e integrarse cualquier contenido existente antes de publicar.
+- La lectura remota GitHub está comprobada, pero la integración de ChatGPT rechazó
+  escritura con403. La terminal del agente sigue sin DNS/gh; publicación pendiente.
+  `scripts/connect_and_publish.py` debe ejecutarse interactivamente desde WSL con
+  Internet para autorizar GitHub CLI y publicar con el historial preservado.
 - El validador auxiliar de skill-creator necesita PyYAML, ausente en este entorno.
   La validación autónoma de las 22 habilidades y TOML nativos sí está implementada.
 

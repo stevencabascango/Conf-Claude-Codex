@@ -17,7 +17,8 @@ Instalador local conservador, documentación, CI y script de publicación sin fo
 ## Ejecutado y comprobado
 
 - `scipython scripts/check.py --output institute/evaluations/software_checks.json`:
-  **64 pruebas**, cero fallos/errores/omisiones; validación del catálogo y habilidades aprobada.
+  **74 pruebas**, cero fallos/errores/omisiones; validación del catálogo y habilidades aprobada.
+  Incluyen las64 iniciales y10 de instalación/publicación añadidas tras diagnosticar el acceso GitHub.
 - Selección inicial de30 perfiles; equipos pequeños y amplios cubren las siete funciones.
 - Caso Hodge: **7 procesos deterministas**, concurrencia máxima2, siete terminados,
   una reconstrucción auditora separada y refutación explícita de la propuesta falsa.
@@ -38,11 +39,21 @@ demostración general formalizada.
 
 ## Acceso y publicación
 
-Se inicializó el repositorio local con el remoto solicitado. No fue posible
+Se inicializó el repositorio local con el remoto solicitado. Durante la primera entrega no fue posible
 inspeccionar el remoto: DNS de GitHub falló y la consulta web no devolvió contenido.
 El script de publicación se intentó y falló porque no hay `gh`. No hubo push ni
 creación confirmada en GitHub; véase `institute/evaluations/publication.json`.
-Con acceso restaurado, inspeccionar/integrar contenido remoto antes de publicar.
+Posteriormente se confirmó la cuenta y la lectura del remoto mediante el conector:
+`main` contiene el README inicial. Un intento mínimo de `create_blob` fue rechazado
+con403 `Resource not accessible by integration`; no se modificaron archivos ni refs
+remotos. OpenAI documenta la restricción de lectura de la app GitHub de ChatGPT.
+
+Se preparó `scripts/connect_and_publish.py` para una terminal propia Ubuntu/WSL
+con Internet: instala gh portable con comprobación SHA256 si falta, solicita
+autorización en el navegador e invoca el publicador. Su integración del README
+remoto conserva ambos historiales y una copia byte a byte del original, comprobado
+con repositorios temporales (incluye CRLF). Las pruebas no usaron credenciales ni
+publicaron nada. La autenticación y la publicación reales siguen pendientes.
 
 ## Skills y división de trabajo
 

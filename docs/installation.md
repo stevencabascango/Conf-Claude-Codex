@@ -44,9 +44,32 @@ un agente pueda crear dentro de su espacio autorizado.
 
 ## Publicación en GitHub
 
-El contenido remoto no pudo inspeccionarse: Git falló con `Could not resolve host:
+Durante la primera implementación no pudo inspeccionarse el remoto: Git falló con `Could not resolve host:
 github.com` y la consulta web no devolvió el repositorio. La implementación local
-no reemplaza contenido remoto desconocido.
+no reemplazó contenido remoto desconocido.
+
+Actualización: el conector permitió identificar la cuenta y leer el repositorio,
+pero `create_blob` devolvió `403 Resource not accessible by integration`. No se
+publicó nada. La [documentación oficial de OpenAI](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt)
+indica que la app de GitHub en ChatGPT es de lectura. Conectar esa app no basta
+para autorizar un push. El remoto inspeccionado sólo contiene el README inicial,
+con commit `ea230a00ed58ee4225e255c52ffe48c0143aba83`.
+
+Desde una terminal propia de Ubuntu/WSL con Internet:
+
+```bash
+python3 /home/asus/Conf-Claude-Codex/scripts/connect_and_publish.py
+```
+
+El asistente local conserva un `gh` existente. Si falta, descarga la versión
+portable de la publicación oficial `cli/cli`, verifica su checksum publicado y
+coloca sólo el ejecutable en `~/.local/bin/gh`, sin reemplazar archivos existentes.
+La autorización se completa directamente en el navegador mediante el flujo
+oficial `gh auth login --web`. Las credenciales quedan bajo la gestión de GitHub
+CLI y no se solicitan ni copian al chat o al repositorio. No necesita sudo.
+Se solicita el alcance `workflow` porque el proyecto contiene su archivo de CI
+en `.github/workflows/`. Una sesión GitHub CLI preexistente necesita permisos
+suficientes para publicar ese archivo, además del contenido del repositorio.
 
 Con red y GitHub CLI autenticado, revisa primero los archivos y ejecuta:
 
@@ -56,7 +79,11 @@ python3 scripts/publish.py
 
 El script comprueba repositorio/usuario, crea el repositorio **privado** si confirma
 que falta, exige un árbol limpio y un commit local, e inspecciona referencias. Si
-hay historia remota desconocida se detiene para su integración, preservando ambos
-contenidos. Nunca usa `--force`, elimina ramas o publica credenciales. La orden
+encuentra exclusivamente el README inicial ya inspeccionado, integra ambas
+historias en un worktree temporal y conserva ese README en
+`docs/README.remote-original.md`. Otros contenidos/conflictos se detienen para
+revisión. El push es normal, sin forzar, y su SHA se verifica después. No elimina
+ramas ni publica credenciales. El helper de credenciales se aplica sólo a la
+invocación Git, sin cambiar la configuración global. La orden
 de creación/publicación está autorizada por el encargo, pero su éxito depende del
 acceso real; sólo una comprobación posterior del SHA remoto permite confirmarlo.

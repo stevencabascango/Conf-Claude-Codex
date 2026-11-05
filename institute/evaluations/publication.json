@@ -1,12 +1,20 @@
 {
-  "evidence": {
-    "git_ls_remote": "fatal: Could not resolve host: github.com",
-    "github_cli": "unavailable",
-    "web_inspection": "cache miss; remote contents unverified"
-  },
   "local_implementation": "complete",
-  "next_step": "Restore connectivity and authenticated GitHub access, inspect existing remote content, then publish without force push",
+  "next_step": "Run scripts/connect_and_publish.py interactively in Ubuntu/WSL with Internet; complete GitHub browser authentication",
+  "official_source": "https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt",
   "publication": "not_published",
-  "remote_inspection": "unavailable",
-  "repository": "stevencabascango/Conf-Claude-Codex"
+  "read_permission": "confirmed",
+  "remote_inspection": "confirmed via GitHub connector",
+  "remote_main": "ea230a00ed58ee4225e255c52ffe48c0143aba83",
+  "repository": "stevencabascango/Conf-Claude-Codex",
+  "terminal": {
+    "gh": "unavailable",
+    "github_dns": "unavailable"
+  },
+  "write_attempt": {
+    "files_modified_remotely": false,
+    "operation": "create_blob",
+    "result": "403 Resource not accessible by integration"
+  },
+  "write_permission": "denied for integration"
 }

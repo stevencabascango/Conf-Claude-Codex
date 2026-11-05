@@ -85,4 +85,12 @@ El repositorio distribuye habilidades en `.agents/skills` y adaptadores TOML en 
 
 ## GitHub
 
-Destino solicitado: [stevencabascango/Conf-Claude-Codex](https://github.com/stevencabascango/Conf-Claude-Codex). La primera implementación se preparó localmente porque el entorno no resolvía `github.com`; el contenido remoto no pudo inspeccionarse. [Publicación conservadora](docs/installation.md#publicación-en-github): el script comprueba acceso y contenido remoto y nunca fuerza un push ni reemplaza historia ajena.
+Destino solicitado: [stevencabascango/Conf-Claude-Codex](https://github.com/stevencabascango/Conf-Claude-Codex). El repositorio remoto tiene un README inicial. La integración de ChatGPT permite leerlo, pero rechazó la escritura con `403 Resource not accessible by integration`; [OpenAI documenta esa restricción de lectura](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt).
+
+Desde la raíz del repositorio, en tu **terminal de Ubuntu/WSL con Internet**, ejecuta:
+
+```bash
+python3 scripts/connect_and_publish.py
+```
+
+El comando instala GitHub CLI localmente si falta, comprueba el SHA-256 del paquete oficial, solicita la autorización en el navegador y ejecuta la publicación. Conserva ambos historiales y archiva el README remoto original. No usa `sudo` ni fuerza un push. [Detalles de instalación y publicación](docs/installation.md#publicación-en-github).
