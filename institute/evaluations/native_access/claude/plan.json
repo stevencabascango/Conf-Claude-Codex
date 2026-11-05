@@ -1,0 +1,128 @@
+{
+  "assignments": [
+    {
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "conceptual",
+      "selection_score": 32
+    },
+    {
+      "profile_id": "G5K-TWISTORS-0362",
+      "role": "mathematics",
+      "selection_score": 32
+    },
+    {
+      "profile_id": "G5K-RG-0066",
+      "role": "physics",
+      "selection_score": 31
+    },
+    {
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "computation",
+      "selection_score": 9
+    },
+    {
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "counterexample",
+      "selection_score": 9
+    },
+    {
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "audit",
+      "selection_score": 9
+    },
+    {
+      "profile_id": "G5K-TWISTORS-0362",
+      "role": "integration",
+      "selection_score": 9
+    }
+  ],
+  "backend": "claude",
+  "counters": {
+    "agents_executed": 0,
+    "completed_executions": 0,
+    "reviewed_results": 0
+  },
+  "created": "2026-11-05T16:45:16.911668+00:00",
+  "problem": "Precisar el signo y los subespacios del operador de Hodge en dos-formas reales de R4 euclídeo y refutar el signo incorrecto.",
+  "programmes": [
+    "quantum_gravity"
+  ],
+  "reference_scope": "reference backend only accepts the built-in Euclidean R4 Hodge benchmark",
+  "registered_profiles": 5000,
+  "requested_model": null,
+  "schema_version": "1.0",
+  "selected_profiles": [
+    "G5K-TWISTORS-0361",
+    "G5K-TWISTORS-0362",
+    "G5K-RG-0066"
+  ],
+  "selection_method": "Deterministic tag/specialty coverage; not an estimate of scientific ability",
+  "tasks": [
+    {
+      "dependencies": [],
+      "id": "task-001",
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "conceptual",
+      "selection_score": 32
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-002",
+      "profile_id": "G5K-TWISTORS-0362",
+      "role": "mathematics",
+      "selection_score": 32
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-003",
+      "profile_id": "G5K-RG-0066",
+      "role": "physics",
+      "selection_score": 31
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-004",
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "computation",
+      "selection_score": 9
+    },
+    {
+      "dependencies": [
+        "task-002",
+        "task-003",
+        "task-004"
+      ],
+      "id": "task-005",
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "counterexample",
+      "selection_score": 9
+    },
+    {
+      "dependencies": [
+        "task-002",
+        "task-003",
+        "task-004",
+        "task-005"
+      ],
+      "id": "task-006",
+      "profile_id": "G5K-TWISTORS-0361",
+      "role": "audit",
+      "selection_score": 9
+    },
+    {
+      "dependencies": [
+        "task-006"
+      ],
+      "id": "task-007",
+      "profile_id": "G5K-TWISTORS-0362",
+      "role": "integration",
+      "selection_score": 9
+    }
+  ]
+}

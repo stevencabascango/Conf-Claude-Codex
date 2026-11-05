@@ -1,0 +1,7 @@
+{
+  "problem": "Precisar el signo y los subespacios del operador de Hodge en dos-formas reales de R4 euclídeo y refutar el signo incorrecto.",
+  "conventions": {"metric": "diag(+1,+1,+1,+1)", "orientation": "e1∧e2∧e3∧e4 positiva", "regime": "álgebra lineal finita", "units": "adimensional"},
+  "criteria": ["Definición y base explícitas", "Cálculo exacto", "Reconstrucción independiente", "Contraejemplo al signo incorrecto", "Alcance finito declarado"],
+  "budgets": {"concurrency": 1, "max_calls": 1, "max_seconds": 30, "task_seconds": 20, "retries": 0},
+  "documentary_base": [{"id": "SAGE-HODGE", "url": "https://doc.sagemath.org/html/en/reference/manifolds/sage/manifolds/differentiable/diff_form.html", "used_result": "Hodge dual and Riemannian square convention"}]
+}

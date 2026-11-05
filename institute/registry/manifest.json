@@ -1,0 +1,20 @@
+{
+  "distribution": {
+    "algebraic_geometry": 550,
+    "categories": 350,
+    "computation": 500,
+    "integration": 450,
+    "lqg": 500,
+    "qft": 500,
+    "rg": 500,
+    "strings": 450,
+    "topology": 550,
+    "twistors": 650
+  },
+  "generation": "python -m genius catalogue",
+  "profile_count": 5000,
+  "profiles_sha256": "f13d544c7f126bce3c756e51ad07db422e6e854c3e3615d1e0e1312ef2e24344",
+  "scientific_capabilities_evaluated": 0,
+  "scientific_evaluation_status": "pending",
+  "version": "1.0.0"
+}

@@ -1,0 +1,133 @@
+{
+  "assignments": [
+    {
+      "profile_id": "G5K-RG-0361",
+      "role": "conceptual",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-TOPOLOGY-0503",
+      "role": "mathematics",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-RG-0346",
+      "role": "physics",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-COMPUTATION-0204",
+      "role": "computation",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-TOPOLOGY-0205",
+      "role": "counterexample",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-COMPUTATION-0047",
+      "role": "audit",
+      "selection_score": 30
+    },
+    {
+      "profile_id": "G5K-INTEGRATION-0160",
+      "role": "integration",
+      "selection_score": 30
+    }
+  ],
+  "backend": "reference",
+  "counters": {
+    "agents_executed": 0,
+    "completed_executions": 0,
+    "reviewed_results": 0
+  },
+  "created": "2026-11-05T16:47:15.215623+00:00",
+  "problem": "Hodge star on real Euclidean R4 two-forms: determine *², eigenspace dimensions, and refute the false claim *²=-I.",
+  "programmes": [
+    "quantum_gravity"
+  ],
+  "reference_case": "hodge-r4",
+  "reference_scope": "reference backend only accepts the built-in Euclidean R4 Hodge benchmark",
+  "registered_profiles": 5000,
+  "requested_model": null,
+  "schema_version": "1.0",
+  "selected_profiles": [
+    "G5K-RG-0361",
+    "G5K-TOPOLOGY-0503",
+    "G5K-RG-0346",
+    "G5K-COMPUTATION-0204",
+    "G5K-TOPOLOGY-0205",
+    "G5K-COMPUTATION-0047",
+    "G5K-INTEGRATION-0160"
+  ],
+  "selection_method": "Deterministic tag/specialty coverage; not an estimate of scientific ability",
+  "tasks": [
+    {
+      "dependencies": [],
+      "id": "task-001",
+      "profile_id": "G5K-RG-0361",
+      "role": "conceptual",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-002",
+      "profile_id": "G5K-TOPOLOGY-0503",
+      "role": "mathematics",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-003",
+      "profile_id": "G5K-RG-0346",
+      "role": "physics",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-001"
+      ],
+      "id": "task-004",
+      "profile_id": "G5K-COMPUTATION-0204",
+      "role": "computation",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-002",
+        "task-003",
+        "task-004"
+      ],
+      "id": "task-005",
+      "profile_id": "G5K-TOPOLOGY-0205",
+      "role": "counterexample",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-002",
+        "task-003",
+        "task-004",
+        "task-005"
+      ],
+      "id": "task-006",
+      "profile_id": "G5K-COMPUTATION-0047",
+      "role": "audit",
+      "selection_score": 30
+    },
+    {
+      "dependencies": [
+        "task-006"
+      ],
+      "id": "task-007",
+      "profile_id": "G5K-INTEGRATION-0160",
+      "role": "integration",
+      "selection_score": 30
+    }
+  ]
+}

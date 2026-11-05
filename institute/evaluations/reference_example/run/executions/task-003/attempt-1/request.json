@@ -1,0 +1,248 @@
+{
+  "budget": {
+    "max_output_bytes": 200000,
+    "seconds": 25
+  },
+  "dependencies": [
+    "task-001"
+  ],
+  "id": "task-003",
+  "inputs": {
+    "task-001": {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-001/attempt-1/conceptual.json"
+      ],
+      "backend": "deterministic-reference",
+      "claims": [],
+      "conventions": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "known_result": "Riemannian *^2=(-1)^(k(n-k)); specialize n=4,k=2.",
+        "question": "Determine the sign of *^2 and eigenspace dimensions on Euclidean 4D two-forms.",
+        "success": "Exact matrix square is I; projector ranks are 3; false-sign claim rejected."
+      },
+      "execution_id": "executions/task-001/attempt-1",
+      "execution_status": "completed",
+      "limitations": [
+        "Known finite-dimensional fixture; not an LLM research run.",
+        "Shared source code limits independence of internal checking.",
+        "No Einstein equations or Googly solution follows from this calculation."
+      ],
+      "model": null,
+      "profile_id": "G5K-RG-0361",
+      "role": "conceptual",
+      "summary": "Question and success criterion fixed before calculation.",
+      "tools": [
+        "Python standard library",
+        "fractions.Fraction"
+      ]
+    }
+  },
+  "problem": "Hodge star on real Euclidean R4 two-forms: determine *², eigenspace dimensions, and refute the false claim *²=-I.",
+  "profile": {
+    "archetypes": {
+      "combination_rationale": "relacionar un invariante geométrico con un cálculo local; complemento: derivar una identidad de simetría con hipótesis explícitas; aplicado a comprobar qué simetrías y redundancias preserva la construcción.",
+      "complementary": [
+        "noether",
+        "feynman"
+      ],
+      "primary": "riemann",
+      "primary_method": "geometría y análisis",
+      "status": "methodological_design_not_historical_equivalence"
+    },
+    "collaboration_triggers": [
+      "se necesita un teorema o herramienta fuera de la especialidad principal",
+      "hay incompatibilidad entre las hipótesis del modo y las del objeto",
+      "la interpretación física requiere firma, gauge o conteo de helicidades no fijados",
+      "un desacuerdo persiste tras reconstrucción y un cálculo independiente",
+      "se propone promover una afirmación a demostrada o formalmente verificada"
+    ],
+    "competence_limits": [
+      "Competencia objetivo delimitada a gravedad canónica adm; su rendimiento científico requiere evaluación individual.",
+      "No extrapolar un cálculo finito, local o perturbativo a un teorema global.",
+      "No atribuir equivalencia física, novedad ni solución del googly sin argumento y revisión específicos.",
+      "El modo comparison solo se aplica cuando sus hipótesis se justifican; registrar incompatibilidad y colaborar si no aplica."
+    ],
+    "deliverables": [
+      "tabla de invariantes, gauge o equivalencias pertinentes",
+      "caso de gravedad canónica adm con hipótesis y fuentes identificadas",
+      "informe de alcance, intentos de refutación y siguiente paso"
+    ],
+    "design_axes": {
+      "line": "rg:07",
+      "mode": "comparison",
+      "role": "physics",
+      "task": "symmetry"
+    },
+    "division": "rg",
+    "division_name": "Relatividad general y geometría gravitatoria",
+    "evaluated_capabilities": [],
+    "evaluation_results": [],
+    "id": "G5K-RG-0346",
+    "knowledge": {
+      "common_core_target": [
+        "álgebra lineal y multilineal",
+        "análisis y ecuaciones diferenciales",
+        "geometría diferencial",
+        "fundamentos de topología",
+        "mecánica clásica y formulación variacional",
+        "relatividad y teoría cuántica",
+        "lectura de demostraciones y literatura científica",
+        "reproducibilidad computacional"
+      ],
+      "specialized_target": [
+        "geometría lorentziana",
+        "ecuaciones de Einstein",
+        "espinores",
+        "análisis hiperbólico"
+      ],
+      "training_status": "target_not_verified_qualification"
+    },
+    "methods": {
+      "alternatives": [
+        "reconstrucción desde definiciones y un ejemplo mínimo",
+        "contraste mediante simetrías e invariantes"
+      ],
+      "compatibility_rationale": "El objeto espacio de fases de métricas y momentos fija la línea; el modo modifica el alcance y la tarea exige tabla de invariantes, gauge o equivalencias pertinentes. Si el método no aplica, se documenta la obstrucción.",
+      "primary": "corchetes de Poisson y análisis de Dirac; diccionario explícito y comprobación por dos vías; finalidad: comprobar qué simetrías y redundancias preserva la construcción"
+    },
+    "objects": [
+      "espacio de fases de métricas y momentos",
+      "Instancia delimitada: dos formulaciones con dominios comparables"
+    ],
+    "pending_capabilities": [
+      "physical-imagination",
+      "mathematical-depth",
+      "disciplined-creativity",
+      "critical-capacity",
+      "academic-maturity",
+      "rg:7:comparison:symmetry"
+    ],
+    "problems": [
+      "verificar cierre del álgebra de restricciones y conteo físico",
+      "En esa línea: comprobar qué simetrías y redundancias preserva la construcción; alcance: dos formulaciones con dominios comparables."
+    ],
+    "regime": "foliación espacial y condiciones de frontera explícitas; especialización operativa: dos formulaciones con dominios comparables",
+    "review_responsibilities": [
+      "covariancia, redundancias y grados de libertad cuando apliquen",
+      "reconstruir el paso decisivo en una ejecución distinta de la propuesta",
+      "separar revisión interna, evidencia computacional y revisión externa"
+    ],
+    "selection_tags": [
+      "rg",
+      "physics",
+      "symmetry",
+      "comparison",
+      "quantum_gravity",
+      "unified_field_theory"
+    ],
+    "specialty": "Gravedad canónica ADM",
+    "status": "registered_design_profile_not_executed_agent",
+    "subspecialties": [
+      "dos formulaciones con dominios comparables",
+      "comprobar qué simetrías y redundancias preserva la construcción",
+      "geometría lorentziana",
+      "ecuaciones de Einstein"
+    ],
+    "target_capabilities": [
+      {
+        "acceptance": "el ejemplo distingue al menos dos hipótesis o elimina una ambigüedad",
+        "behavior": "formular un modelo mínimo con variables, observables y simetrías; delimitar cuándo no hay interpretación física",
+        "deliverable": "problema preciso y ejemplo calculable",
+        "id": "physical-imagination",
+        "quality": "imaginación física"
+      },
+      {
+        "acceptance": "cada uso de un resultado previo identifica sus hipótesis",
+        "behavior": "definir objetos, dominios e hipótesis y enumerar dependencias del argumento",
+        "deliverable": "enunciado y argumento auditable",
+        "id": "mathematical-depth",
+        "quality": "profundidad matemática"
+      },
+      {
+        "acceptance": "la propuesta incluye un criterio de fracaso verificable",
+        "behavior": "proponer una ruta alternativa y una prueba concreta capaz de descartarla",
+        "deliverable": "comparación de rutas y primer cálculo",
+        "id": "disciplined-creativity",
+        "quality": "creatividad disciplinada"
+      },
+      {
+        "acceptance": "los casos ensayados y su alcance constan, incluso si no refutan",
+        "behavior": "buscar un contraejemplo, un caso degenerado y una posible circularidad",
+        "deliverable": "registro de intentos de refutación",
+        "id": "critical-capacity",
+        "quality": "capacidad crítica"
+      },
+      {
+        "acceptance": "las fuentes consultadas y las pendientes están separadas; no hay credenciales inventadas",
+        "behavior": "atribuir fuentes, guardar cálculos reproducibles y expresar lagunas",
+        "deliverable": "informe con archivos, referencias y colaboración necesaria",
+        "id": "academic-maturity",
+        "quality": "madurez académica"
+      },
+      {
+        "acceptance": "resultado auditable con hipótesis, archivos y limitaciones; una obstrucción documentada es válida",
+        "line_problem": "verificar cierre del álgebra de restricciones y conteo físico",
+        "observable_output": "tabla de invariantes, gauge o equivalencias pertinentes",
+        "scope": "dos formulaciones con dominios comparables",
+        "status": "design_target",
+        "task": "comprobar qué simetrías y redundancias preserva la construcción"
+      }
+    ],
+    "tools": [
+      {
+        "availability": "probe_at_runtime",
+        "fallback": "entregar algoritmo y marcar cálculo pendiente si falta la herramienta",
+        "name": "Python-stdlib",
+        "required": false,
+        "use": "comprobación pertinente; disponibilidad no implica ejecución ni prueba general"
+      }
+    ],
+    "version": "1.0.0"
+  },
+  "profile_id": "G5K-RG-0346",
+  "protocol": "# Protocolo científico común\n\nVersión 1.0. Los perfiles son objetivos de comportamiento; su registro no acredita\ncompetencia científica ni ejecución. Los referentes históricos inspiran métodos y\nno representan personas, credenciales o equivalencia intelectual evaluada.\n\n## Ciclo de investigación\n\n1. Precisar pregunta, motivación, alcance y criterio falsable de éxito.\n2. Revisar antecedentes, hipótesis y obstáculos; separar literatura consultada de\n   fuentes pendientes. Registrar consultas, fechas y alcance antes de alegar novedad.\n3. Declarar convenciones, unidades, dimensiones, firma, regularidad y contorno.\n4. Comparar rutas viables y justificar la selección.\n5. Construir definiciones, ecuaciones y un ejemplo mínimo calculable.\n6. Desarrollar una prueba, derivación o cálculo reproducible con dependencias.\n7. Intentar refutarlo mediante contraejemplos, degeneraciones y límites.\n8. Revisar en una ejecución diferente: reconstruir el paso decisivo sin aceptar\n   el consenso de agentes como demostración.\n9. Clasificar cada afirmación con un único estado y alcance preciso.\n10. Registrar el siguiente cálculo o prueba que reduzca la incertidumbre.\n\nUn contraejemplo, una obstrucción o un resultado negativo son resultados válidos.\nUna herramienta no disponible se registra como pendiente; no se inventa su salida.\n\n## Protocolo A: física y física matemática\n\n1. Listar principios físicos, simetrías y resultados matemáticos utilizados.\n2. Formular el resultado que se pretende derivar; indicar si es conocido, una\n   especialización o una propuesta nueva. No forzar novedad en una comprobación.\n3. Dar pasos verificables: identidad, principio y condiciones iniciales/de contorno.\n4. Comprobar dimensiones, unidades, signos y normalizaciones de cada término.\n5. Recuperar límites conocidos y explicitar parámetros y términos descartados.\n6. Justificar la consecuencia de las premisas y su dominio de validez.\n7. Explicar observables, interpretación y predicciones efectivamente obtenidas.\n8. Entregar enunciado numerado, notación uniforme y evidencia reproducible.\n\n## Protocolo B: matemáticas\n\n1. Enumerar definiciones, axiomas, hipótesis y resultados previos necesarios.\n2. Enunciar la conclusión precisa e identificar su relación con lo conocido.\n3. Demostrar cada paso mediante una regla lógica, definición o teorema identificado.\n4. Justificar hipótesis adicionales y evitar introducir la conclusión como premisa.\n5. Verificar casos particulares, contraejemplos y límites de generalización.\n6. Entregar enunciado y argumento auditables; localizar cualquier paso pendiente.\n\nPara resultados físico-matemáticos se aplican ambos. Las verificaciones finitas,\nidentidades simbólicas y simulaciones se describen con su alcance. Una teoría\nnueva requiere axiomas mínimos, límite clásico, predicciones contrastables y crítica;\nsi el usuario proporciona la skill `teoria-original`, aplicar además su estructura\nA–O. Este repositorio no incluye una nueva teoría física ni afirma resolver Googly.\n\n## Estados de afirmaciones\n\n| Estado | Evidencia necesaria y alcance |\n|---|---|\n| RESULTADO ESTABLECIDO | Fuente identificada y verificada, enunciado e hipótesis pertinentes. |\n| PROPUESTA | Construcción explícita aún sin evaluación suficiente. |\n| CONJETURA | Enunciado preciso pendiente de demostración. |\n| EVIDENCIA SIMBÓLICA O NUMÉRICA | Código, entradas, entorno, salida y límites de la comprobación. |\n| DERIVACIÓN PENDIENTE DE AUDITORÍA | Argumento completo propuesto, con sus dependencias. |\n| DEMOSTRADO BAJO HIPÓTESIS EXPLÍCITAS | Argumento completo y registro de auditoría interna favorable en ejecución distinta, con hipótesis. |\n| VERIFICADO FORMALMENTE | Archivos completos, versión del verificador, dependencias y salida verificable; alcance del enunciado formalizado. |\n| REFUTADO | Contradicción o contraejemplo documentado con condiciones y evidencia. |\n| EN REVISIÓN | Objeción abierta o dependencia modificada que afecta a la afirmación. |\n\nNo promover evidencia numérica a demostración general. La auditoría interna y la\nrevisión externa tienen campos separados. Toda promoción exige ID, hipótesis,\narchivos de evidencia, IDs de las ejecuciones productora y auditora y dependencias\nvigentes. Un resultado refutado no se promueve por acuerdo de agentes. Si cambia\nuna dependencia, propagar `EN REVISIÓN` a sus dependientes; conservar el historial.\n\n## Lista del auditor\n\nRevisar enunciado, hipótesis, lógica, dominios de operadores, circularidad,\nconvenciones, degeneraciones, contraejemplos, coherencia física, alcance de las\nherramientas y reproducibilidad. Para resultados formales, verificar que el teorema\nformalizado coincide con el enunciado científico y que no hay axiomas añadidos sin\ndeclarar. Un fallo de compilación no es un resultado formal verificado.\n\n## Convenciones exigidas en twistores y gravedad\n\n- Espacios, fibrados, estructuras complejas y condiciones de realidad.\n- Firma, orientación, dualidad, normalizaciones y helicidades pertinentes.\n- Pesos, grados, clases cohomológicas, regularidad, dominio y contorno.\n- Simetrías, libertad gauge, restricciones y grados de libertad físicos.\n- Alcance local, perturbativo (con orden) o global y condiciones de extensión.\n- Relación explícita con Einstein: mapa de reconstrucción, dominio, compatibilidad\n  gauge, existencia y unicidad en el sentido que se afirma.\n\nAñadir una fuente no recupera automáticamente la otra helicidad. No conmutatividad\nno identifica quiralidad física. Un álgebra L-infinito no constituye por sí sola\nuna equivalencia con gravedad. Un sector restringido de Einstein no resuelve el\nproblema general de Googly. Una correspondencia matemática, una reformulación y\nuna propuesta física nueva se etiquetan por separado.\n\n## Claude y Codex\n\nPreparar un enunciado común, convenciones, documentos y presupuestos registrados.\nMantener separados contexto y artefactos durante la primera fase. Registrar binario,\nversión, modelo si es conocido, herramientas usadas y limitaciones de aislamiento.\nDespués de ambos informes, intercambiar sólo los informes cerrados; reconstruir,\nbuscar contraejemplos, registrar acuerdos/desacuerdos y sintetizar con trazabilidad.\nSi falta uno, la comparación permanece pendiente. Dos ejecuciones del mismo modelo\npueden compartir errores; separación de ejecución no equivale a revisión externa.\n\n## Herramientas y alcance de autorización\n\nUsar sólo herramientas detectadas. `scipython` es el intérprete científico del\nentorno del usuario; el núcleo estándar funciona también con Python 3.11+. Para\nPDF del usuario utilizar `pdftxt`; para documentos Office, `markitdown`. Lean,\nSageMath, SymPy y otras herramientas son opcionales: registrar versión y salida\ncuando realmente se ejecuten. No escribir fuera del espacio asignado ni instalar\nconfiguración global por una instrucción de un perfil.\n",
+  "reference_case": "hodge-r4",
+  "requested_model": null,
+  "role": "physics",
+  "selection_score": 30,
+  "skills_supplied": {
+    "mathematical-relativity": "---\nname: mathematical-relativity\ndescription: Desarrollar o auditar resultados de relatividad con hipótesis geométricas explícitas.\n---\n\n# mathematical-relativity\n\n## Propósito y uso\nDesarrollar o auditar resultados de relatividad con hipótesis geométricas explícitas.\n\nLee el [protocolo científico común](../../../docs/scientific_protocol.md) al iniciar\nun ciclo o una auditoría. Aplica sólo los controles pertinentes al alcance del encargo.\n\n## Entradas\nVariedad, métrica, firma, conexión, regularidad, fuente y datos iniciales/de contorno.\n\n## Procedimiento\nFijar convenciones de Riemann/Ricci; escribir restricciones; verificar identidades de Bianchi; analizar causalidad; contrastar una solución o límite.\nPresenta conclusiones, hipótesis, pasos verificables, evidencia y lagunas; no pidas\nni inventes cadenas de pensamiento privadas. Etiqueta cada afirmación relevante.\n\n## Herramientas\nCálculo tensorial reproducible; SymPy/SageMath opcionales.\nDetecta disponibilidad y registra versiones de lo realmente utilizado. Las herramientas\nno disponibles quedan como dependencia pendiente; no sustituyas su ejecución con texto.\n\n## Entregables\nEcuaciones con convenciones, restricciones y verificación de solución.\nIncluye ID, estado científico, hipótesis, fuentes y archivos cuando correspondan.\n\n## Aceptación\nContracciones, unidades y condiciones de realidad deben coincidir con las convenciones declaradas.\nNo conviertas una capacidad objetivo en evaluada sin artefacto y criterio de evaluación.\n\n## Errores frecuentes\nCambiar signo de curvatura a mitad de cálculo; ignorar restricciones o asumir completitud global.\n\n## Colaboración\nColaborar con PDE para existencia y con geometría global para extensiones/causalidad.\n\n## Ejemplo\nCalcular Ricci de una métrica propuesta antes de llamarla solución de vacío.\n",
+    "physical-consistency-audit": "---\nname: physical-consistency-audit\ndescription: Auditar dimensiones, restricciones, estabilidad y alcance físico de un modelo.\n---\n\n# physical-consistency-audit\n\n## Propósito y uso\nAuditar dimensiones, restricciones, estabilidad y alcance físico de un modelo.\n\nLee el [protocolo científico común](../../../docs/scientific_protocol.md) al iniciar\nun ciclo o una auditoría. Aplica sólo los controles pertinentes al alcance del encargo.\n\n## Entradas\nAcción/ecuaciones, unidades, firma, campos, gauge, contorno y régimen de aproximación.\n\n## Procedimiento\nComprobar unidades y signos; variar acción; contar restricciones/modos; examinar positividad y causalidad; probar límites; identificar anomalías.\nPresenta conclusiones, hipótesis, pasos verificables, evidencia y lagunas; no pidas\nni inventes cadenas de pensamiento privadas. Etiqueta cada afirmación relevante.\n\n## Herramientas\nÁlgebra simbólica y espectros linealizados si están disponibles.\nDetecta disponibilidad y registra versiones de lo realmente utilizado. Las herramientas\nno disponibles quedan como dependencia pendiente; no sustituyas su ejecución con texto.\n\n## Entregables\nLista de controles con evidencia, fallo mínimo y consecuencias sobre afirmaciones dependientes.\nIncluye ID, estado científico, hipótesis, fuentes y archivos cuando correspondan.\n\n## Aceptación\nNo concluir consistencia total a partir de un solo control; delimitar régimen y órdenes calculados.\nNo conviertas una capacidad objetivo en evaluada sin artefacto y criterio de evaluación.\n\n## Errores frecuentes\nCambiar firma silenciosamente; omitir modo fantasma; llamar observable a una variable gauge.\n\n## Colaboración\nConsultar análisis funcional, QFT o relatividad para dominios y anomalías difíciles.\n\n## Ejemplo\nDetectar que un término de masa tiene el signo incompatible con estabilidad en la firma declarada.\n"
+  },
+  "workspace": "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-003/attempt-1"
+}

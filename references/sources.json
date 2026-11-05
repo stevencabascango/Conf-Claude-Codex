@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "search_scope": "Documentación oficial de habilidades/agentes y referencia matemática del caso Hodge; sin revisión de novedad de teorías físicas.",
+  "sources": [
+    {"id": "OPENAI-SKILLS", "author": "OpenAI", "title": "Build skills", "url": "https://learn.chatgpt.com/docs/build-skills", "accessed": "2026-11-05", "status": "consulted", "supports": "SKILL.md, name/description, descubrimiento .agents/skills"},
+    {"id": "OPENAI-SUBAGENTS", "author": "OpenAI", "title": "Subagents", "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents", "accessed": "2026-11-05", "status": "consulted", "supports": "Agentes TOML del proyecto, campos name/description/developer_instructions y herencia de permisos"},
+    {"id": "CLAUDE-SKILLS", "author": "Anthropic", "title": "Extend Claude with skills", "url": "https://code.claude.com/docs/en/skills", "accessed": "2026-11-05", "status": "consulted", "supports": "Habilidades locales .claude/skills"},
+    {"id": "CLAUDE-SUBAGENTS", "author": "Anthropic", "title": "Create custom subagents", "url": "https://code.claude.com/docs/en/sub-agents", "accessed": "2026-11-05", "status": "consulted", "supports": "Agentes Markdown con frontmatter y modelo inherit"},
+    {"id": "SAGE-HODGE", "author": "SageMath developers", "title": "Clifford algebra elements: ExteriorAlgebraElement.hodge_dual", "url": "https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/clifford_algebra_element.html#sage.algebras.clifford_algebra_element.ExteriorAlgebraElement.hodge_dual", "accessed": "2026-11-05", "status": "consulted", "supports": "Regla del cuadrado (-1)^(k(n-k)) de dualidad exterior euclídea; ejemplo n=4,k=2"},
+    {"id": "SAGE-DIFFERENTIAL-FORMS", "author": "SageMath developers", "title": "Differential Forms", "url": "https://doc.sagemath.org/html/en/reference/manifolds/sage/manifolds/differentiable/diff_form.html", "accessed": "2026-11-05", "status": "consulted", "supports": "Dualidad de Hodge definida respecto a una métrica y dependencia dimensional"}
+  ]
+}

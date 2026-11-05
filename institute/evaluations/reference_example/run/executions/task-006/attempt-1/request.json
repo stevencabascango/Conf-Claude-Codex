@@ -1,0 +1,1218 @@
+{
+  "budget": {
+    "max_output_bytes": 200000,
+    "seconds": 25
+  },
+  "dependencies": [
+    "task-002",
+    "task-003",
+    "task-004",
+    "task-005"
+  ],
+  "id": "task-006",
+  "inputs": {
+    "task-002": {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/mathematics.json"
+      ],
+      "backend": "deterministic-reference",
+      "claims": [
+        {
+          "evidence": {
+            "anti_self_dual_dimension": 3,
+            "arithmetic": "fractions.Fraction; no floating-point tolerance",
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "counterexample": {
+              "difference_coefficient": 2,
+              "false_prediction": "-e1 wedge e2",
+              "input": "e1 wedge e2",
+              "star": "e3 wedge e4",
+              "star_twice": "e1 wedge e2"
+            },
+            "matrix": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "self_dual_dimension": 3,
+            "square": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "square_is_identity": true
+          },
+          "hypotheses": {
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "definition": "alpha wedge *beta = <alpha,beta> vol",
+            "field": "real; exact rational matrix entries",
+            "metric": "diag(+1,+1,+1,+1)",
+            "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+            "regime": "single oriented inner-product vector space; no field equations",
+            "signature": "Euclidean",
+            "space": "Lambda^2((R^4)^*)",
+            "units": "dimensionless linear algebra in an orthonormal coframe"
+          },
+          "id": "HODGE-E4-001",
+          "review_kind": "internal; separate execution required for promotion",
+          "statement": "*^2 = I on Lambda^2((R^4)^*) for the declared Euclidean metric",
+          "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+        },
+        {
+          "evidence": {
+            "minus": 3,
+            "plus": 3
+          },
+          "hypotheses": {
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "definition": "alpha wedge *beta = <alpha,beta> vol",
+            "field": "real; exact rational matrix entries",
+            "metric": "diag(+1,+1,+1,+1)",
+            "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+            "regime": "single oriented inner-product vector space; no field equations",
+            "signature": "Euclidean",
+            "space": "Lambda^2((R^4)^*)",
+            "units": "dimensionless linear algebra in an orthonormal coframe"
+          },
+          "id": "HODGE-E4-002",
+          "review_kind": "internal; separate execution required for promotion",
+          "statement": "The real +1 and -1 eigenspaces each have dimension three",
+          "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+        }
+      ],
+      "conventions": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "anti_self_dual_dimension": 3,
+        "arithmetic": "fractions.Fraction; no floating-point tolerance",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "counterexample": {
+          "difference_coefficient": 2,
+          "false_prediction": "-e1 wedge e2",
+          "input": "e1 wedge e2",
+          "star": "e3 wedge e4",
+          "star_twice": "e1 wedge e2"
+        },
+        "matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "self_dual_dimension": 3,
+        "square": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "square_is_identity": true
+      },
+      "execution_id": "executions/task-002/attempt-1",
+      "execution_status": "completed",
+      "limitations": [
+        "Known finite-dimensional fixture; not an LLM research run.",
+        "Shared source code limits independence of internal checking.",
+        "No Einstein equations or Googly solution follows from this calculation."
+      ],
+      "model": null,
+      "profile_id": "G5K-TOPOLOGY-0503",
+      "role": "mathematics",
+      "summary": "Exact six-dimensional Hodge-star calculation completed.",
+      "tools": [
+        "Python standard library",
+        "fractions.Fraction"
+      ]
+    },
+    "task-003": {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-003/attempt-1/physics.json"
+      ],
+      "backend": "deterministic-reference",
+      "claims": [],
+      "conventions": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "gauge": "none in this finite vector-space fixture",
+        "physical_scope": "Algebraic self-duality; no gravitational helicity count or dynamics established.",
+        "signature_change": "With one negative metric direction, *^2=-I on 4D two-forms.",
+        "units": "dimensionless"
+      },
+      "execution_id": "executions/task-003/attempt-1",
+      "execution_status": "completed",
+      "limitations": [
+        "Known finite-dimensional fixture; not an LLM research run.",
+        "Shared source code limits independence of internal checking.",
+        "No Einstein equations or Googly solution follows from this calculation."
+      ],
+      "model": null,
+      "profile_id": "G5K-RG-0346",
+      "role": "physics",
+      "summary": "Signature and scope checked.",
+      "tools": [
+        "Python standard library",
+        "fractions.Fraction"
+      ]
+    },
+    "task-004": {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-004/attempt-1/computation.json"
+      ],
+      "backend": "deterministic-reference",
+      "claims": [
+        {
+          "evidence": {
+            "anti_self_dual_dimension": 3,
+            "arithmetic": "fractions.Fraction; no floating-point tolerance",
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "counterexample": {
+              "difference_coefficient": 2,
+              "false_prediction": "-e1 wedge e2",
+              "input": "e1 wedge e2",
+              "star": "e3 wedge e4",
+              "star_twice": "e1 wedge e2"
+            },
+            "matrix": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "self_dual_dimension": 3,
+            "square": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "square_is_identity": true
+          },
+          "hypotheses": {
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "definition": "alpha wedge *beta = <alpha,beta> vol",
+            "field": "real; exact rational matrix entries",
+            "metric": "diag(+1,+1,+1,+1)",
+            "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+            "regime": "single oriented inner-product vector space; no field equations",
+            "signature": "Euclidean",
+            "space": "Lambda^2((R^4)^*)",
+            "units": "dimensionless linear algebra in an orthonormal coframe"
+          },
+          "id": "HODGE-E4-001",
+          "review_kind": "internal; separate execution required for promotion",
+          "statement": "*^2 = I on Lambda^2((R^4)^*) for the declared Euclidean metric",
+          "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+        },
+        {
+          "evidence": {
+            "minus": 3,
+            "plus": 3
+          },
+          "hypotheses": {
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "definition": "alpha wedge *beta = <alpha,beta> vol",
+            "field": "real; exact rational matrix entries",
+            "metric": "diag(+1,+1,+1,+1)",
+            "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+            "regime": "single oriented inner-product vector space; no field equations",
+            "signature": "Euclidean",
+            "space": "Lambda^2((R^4)^*)",
+            "units": "dimensionless linear algebra in an orthonormal coframe"
+          },
+          "id": "HODGE-E4-002",
+          "review_kind": "internal; separate execution required for promotion",
+          "statement": "The real +1 and -1 eigenspaces each have dimension three",
+          "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+        }
+      ],
+      "conventions": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "anti_self_dual_dimension": 3,
+        "arithmetic": "fractions.Fraction; no floating-point tolerance",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "counterexample": {
+          "difference_coefficient": 2,
+          "false_prediction": "-e1 wedge e2",
+          "input": "e1 wedge e2",
+          "star": "e3 wedge e4",
+          "star_twice": "e1 wedge e2"
+        },
+        "matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "self_dual_dimension": 3,
+        "square": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "square_is_identity": true
+      },
+      "execution_id": "executions/task-004/attempt-1",
+      "execution_status": "completed",
+      "limitations": [
+        "Known finite-dimensional fixture; not an LLM research run.",
+        "Shared source code limits independence of internal checking.",
+        "No Einstein equations or Googly solution follows from this calculation."
+      ],
+      "model": null,
+      "profile_id": "G5K-COMPUTATION-0204",
+      "role": "computation",
+      "summary": "Exact six-dimensional Hodge-star calculation completed.",
+      "tools": [
+        "Python standard library",
+        "fractions.Fraction"
+      ]
+    },
+    "task-005": {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-005/attempt-1/counterexample.json"
+      ],
+      "backend": "deterministic-reference",
+      "claims": [
+        {
+          "evidence": {
+            "difference_coefficient": 2,
+            "false_prediction": "-e1 wedge e2",
+            "input": "e1 wedge e2",
+            "star": "e3 wedge e4",
+            "star_twice": "e1 wedge e2"
+          },
+          "hypotheses": {
+            "basis": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "definition": "alpha wedge *beta = <alpha,beta> vol",
+            "field": "real; exact rational matrix entries",
+            "metric": "diag(+1,+1,+1,+1)",
+            "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+            "regime": "single oriented inner-product vector space; no field equations",
+            "signature": "Euclidean",
+            "space": "Lambda^2((R^4)^*)",
+            "units": "dimensionless linear algebra in an orthonormal coframe"
+          },
+          "id": "HODGE-E4-FALSE",
+          "review_kind": "internal; separate execution required for promotion",
+          "statement": "*^2 = -I on real Euclidean two-forms in dimension four",
+          "status": "REFUTADO"
+        }
+      ],
+      "conventions": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "difference_coefficient": 2,
+        "false_prediction": "-e1 wedge e2",
+        "input": "e1 wedge e2",
+        "star": "e3 wedge e4",
+        "star_twice": "e1 wedge e2"
+      },
+      "execution_id": "executions/task-005/attempt-1",
+      "execution_status": "completed",
+      "limitations": [
+        "Known finite-dimensional fixture; not an LLM research run.",
+        "Shared source code limits independence of internal checking.",
+        "No Einstein equations or Googly solution follows from this calculation."
+      ],
+      "model": null,
+      "profile_id": "G5K-TOPOLOGY-0205",
+      "role": "counterexample",
+      "summary": "The deliberately false Euclidean claim *^2=-I is refuted by e1 wedge e2.",
+      "tools": [
+        "Python standard library",
+        "fractions.Fraction"
+      ]
+    }
+  },
+  "problem": "Hodge star on real Euclidean R4 two-forms: determine *², eigenspace dimensions, and refute the false claim *²=-I.",
+  "profile": {
+    "archetypes": {
+      "combination_rationale": "especificar dominio de operadores y un procedimiento comprobable; complemento: derivar una identidad de simetría con hipótesis explícitas; aplicado a revisar fuentes y detectar una dependencia circular o inestable.",
+      "complementary": [
+        "noether",
+        "riemann"
+      ],
+      "primary": "von-neumann",
+      "primary_method": "estructuras operatoriales y algoritmos",
+      "status": "methodological_design_not_historical_equivalence"
+    },
+    "collaboration_triggers": [
+      "se necesita un teorema o herramienta fuera de la especialidad principal",
+      "hay incompatibilidad entre las hipótesis del modo y las del objeto",
+      "la interpretación física requiere firma, gauge o conteo de helicidades no fijados",
+      "un desacuerdo persiste tras reconstrucción y un cálculo independiente",
+      "se propone promover una afirmación a demostrada o formalmente verificada"
+    ],
+    "competence_limits": [
+      "Competencia objetivo delimitada a formalización lean; su rendimiento científico requiere evaluación individual.",
+      "No extrapolar un cálculo finito, local o perturbativo a un teorema global.",
+      "No atribuir equivalencia física, novedad ni solución del googly sin argumento y revisión específicos.",
+      "El modo reproduction solo se aplica cuando sus hipótesis se justifican; registrar incompatibilidad y colaborar si no aplica."
+    ],
+    "deliverables": [
+      "grafo de dependencias y localizadores de fuentes",
+      "caso de formalización lean con hipótesis y fuentes identificadas",
+      "informe de alcance, intentos de refutación y siguiente paso"
+    ],
+    "design_axes": {
+      "line": "computation:01",
+      "mode": "reproduction",
+      "role": "audit",
+      "task": "dependencies"
+    },
+    "division": "computation",
+    "division_name": "Verificación formal, análisis numérico y computación científica",
+    "evaluated_capabilities": [],
+    "evaluation_results": [],
+    "id": "G5K-COMPUTATION-0047",
+    "knowledge": {
+      "common_core_target": [
+        "álgebra lineal y multilineal",
+        "análisis y ecuaciones diferenciales",
+        "geometría diferencial",
+        "fundamentos de topología",
+        "mecánica clásica y formulación variacional",
+        "relatividad y teoría cuántica",
+        "lectura de demostraciones y literatura científica",
+        "reproducibilidad computacional"
+      ],
+      "specialized_target": [
+        "aritmética exacta",
+        "análisis de error",
+        "algoritmos",
+        "verificación formal"
+      ],
+      "training_status": "target_not_verified_qualification"
+    },
+    "methods": {
+      "alternatives": [
+        "reconstrucción desde definiciones y un ejemplo mínimo",
+        "contraste mediante simetrías e invariantes"
+      ],
+      "compatibility_rationale": "El objeto enunciado formal y dependencias de Mathlib fija la línea; el modo modifica el alcance y la tarea exige grafo de dependencias y localizadores de fuentes. Si el método no aplica, se documenta la obstrucción.",
+      "primary": "formalización y type checking; reproducción desde manifiesto y entradas; finalidad: revisar fuentes y detectar una dependencia circular o inestable"
+    },
+    "objects": [
+      "enunciado formal y dependencias de Mathlib",
+      "Instancia delimitada: entorno limpio con versiones declaradas"
+    ],
+    "pending_capabilities": [
+      "physical-imagination",
+      "mathematical-depth",
+      "disciplined-creativity",
+      "critical-capacity",
+      "academic-maturity",
+      "computation:1:reproduction:dependencies"
+    ],
+    "problems": [
+      "comparar teorema informal y término comprobado por el kernel",
+      "En esa línea: revisar fuentes y detectar una dependencia circular o inestable; alcance: entorno limpio con versiones declaradas."
+    ],
+    "regime": "versión fijada y ausencia de axiomas añadidos documentada; especialización operativa: entorno limpio con versiones declaradas",
+    "review_responsibilities": [
+      "circularidad, atribución y cambio de hipótesis",
+      "reconstruir el paso decisivo en una ejecución distinta de la propuesta",
+      "separar revisión interna, evidencia computacional y revisión externa"
+    ],
+    "selection_tags": [
+      "computation",
+      "audit",
+      "dependencies",
+      "reproduction",
+      "googly",
+      "quantum_gravity",
+      "unified_field_theory"
+    ],
+    "specialty": "Formalización Lean",
+    "status": "registered_design_profile_not_executed_agent",
+    "subspecialties": [
+      "entorno limpio con versiones declaradas",
+      "revisar fuentes y detectar una dependencia circular o inestable",
+      "aritmética exacta",
+      "análisis de error"
+    ],
+    "target_capabilities": [
+      {
+        "acceptance": "el ejemplo distingue al menos dos hipótesis o elimina una ambigüedad",
+        "behavior": "formular un modelo mínimo con variables, observables y simetrías; delimitar cuándo no hay interpretación física",
+        "deliverable": "problema preciso y ejemplo calculable",
+        "id": "physical-imagination",
+        "quality": "imaginación física"
+      },
+      {
+        "acceptance": "cada uso de un resultado previo identifica sus hipótesis",
+        "behavior": "definir objetos, dominios e hipótesis y enumerar dependencias del argumento",
+        "deliverable": "enunciado y argumento auditable",
+        "id": "mathematical-depth",
+        "quality": "profundidad matemática"
+      },
+      {
+        "acceptance": "la propuesta incluye un criterio de fracaso verificable",
+        "behavior": "proponer una ruta alternativa y una prueba concreta capaz de descartarla",
+        "deliverable": "comparación de rutas y primer cálculo",
+        "id": "disciplined-creativity",
+        "quality": "creatividad disciplinada"
+      },
+      {
+        "acceptance": "los casos ensayados y su alcance constan, incluso si no refutan",
+        "behavior": "buscar un contraejemplo, un caso degenerado y una posible circularidad",
+        "deliverable": "registro de intentos de refutación",
+        "id": "critical-capacity",
+        "quality": "capacidad crítica"
+      },
+      {
+        "acceptance": "las fuentes consultadas y las pendientes están separadas; no hay credenciales inventadas",
+        "behavior": "atribuir fuentes, guardar cálculos reproducibles y expresar lagunas",
+        "deliverable": "informe con archivos, referencias y colaboración necesaria",
+        "id": "academic-maturity",
+        "quality": "madurez académica"
+      },
+      {
+        "acceptance": "resultado auditable con hipótesis, archivos y limitaciones; una obstrucción documentada es válida",
+        "line_problem": "comparar teorema informal y término comprobado por el kernel",
+        "observable_output": "grafo de dependencias y localizadores de fuentes",
+        "scope": "entorno limpio con versiones declaradas",
+        "status": "design_target",
+        "task": "revisar fuentes y detectar una dependencia circular o inestable"
+      }
+    ],
+    "tools": [
+      {
+        "availability": "probe_at_runtime",
+        "fallback": "entregar algoritmo y marcar cálculo pendiente si falta la herramienta",
+        "name": "Python-stdlib",
+        "required": false,
+        "use": "comprobación pertinente; disponibilidad no implica ejecución ni prueba general"
+      }
+    ],
+    "version": "1.0.0"
+  },
+  "profile_id": "G5K-COMPUTATION-0047",
+  "protocol": "# Protocolo científico común\n\nVersión 1.0. Los perfiles son objetivos de comportamiento; su registro no acredita\ncompetencia científica ni ejecución. Los referentes históricos inspiran métodos y\nno representan personas, credenciales o equivalencia intelectual evaluada.\n\n## Ciclo de investigación\n\n1. Precisar pregunta, motivación, alcance y criterio falsable de éxito.\n2. Revisar antecedentes, hipótesis y obstáculos; separar literatura consultada de\n   fuentes pendientes. Registrar consultas, fechas y alcance antes de alegar novedad.\n3. Declarar convenciones, unidades, dimensiones, firma, regularidad y contorno.\n4. Comparar rutas viables y justificar la selección.\n5. Construir definiciones, ecuaciones y un ejemplo mínimo calculable.\n6. Desarrollar una prueba, derivación o cálculo reproducible con dependencias.\n7. Intentar refutarlo mediante contraejemplos, degeneraciones y límites.\n8. Revisar en una ejecución diferente: reconstruir el paso decisivo sin aceptar\n   el consenso de agentes como demostración.\n9. Clasificar cada afirmación con un único estado y alcance preciso.\n10. Registrar el siguiente cálculo o prueba que reduzca la incertidumbre.\n\nUn contraejemplo, una obstrucción o un resultado negativo son resultados válidos.\nUna herramienta no disponible se registra como pendiente; no se inventa su salida.\n\n## Protocolo A: física y física matemática\n\n1. Listar principios físicos, simetrías y resultados matemáticos utilizados.\n2. Formular el resultado que se pretende derivar; indicar si es conocido, una\n   especialización o una propuesta nueva. No forzar novedad en una comprobación.\n3. Dar pasos verificables: identidad, principio y condiciones iniciales/de contorno.\n4. Comprobar dimensiones, unidades, signos y normalizaciones de cada término.\n5. Recuperar límites conocidos y explicitar parámetros y términos descartados.\n6. Justificar la consecuencia de las premisas y su dominio de validez.\n7. Explicar observables, interpretación y predicciones efectivamente obtenidas.\n8. Entregar enunciado numerado, notación uniforme y evidencia reproducible.\n\n## Protocolo B: matemáticas\n\n1. Enumerar definiciones, axiomas, hipótesis y resultados previos necesarios.\n2. Enunciar la conclusión precisa e identificar su relación con lo conocido.\n3. Demostrar cada paso mediante una regla lógica, definición o teorema identificado.\n4. Justificar hipótesis adicionales y evitar introducir la conclusión como premisa.\n5. Verificar casos particulares, contraejemplos y límites de generalización.\n6. Entregar enunciado y argumento auditables; localizar cualquier paso pendiente.\n\nPara resultados físico-matemáticos se aplican ambos. Las verificaciones finitas,\nidentidades simbólicas y simulaciones se describen con su alcance. Una teoría\nnueva requiere axiomas mínimos, límite clásico, predicciones contrastables y crítica;\nsi el usuario proporciona la skill `teoria-original`, aplicar además su estructura\nA–O. Este repositorio no incluye una nueva teoría física ni afirma resolver Googly.\n\n## Estados de afirmaciones\n\n| Estado | Evidencia necesaria y alcance |\n|---|---|\n| RESULTADO ESTABLECIDO | Fuente identificada y verificada, enunciado e hipótesis pertinentes. |\n| PROPUESTA | Construcción explícita aún sin evaluación suficiente. |\n| CONJETURA | Enunciado preciso pendiente de demostración. |\n| EVIDENCIA SIMBÓLICA O NUMÉRICA | Código, entradas, entorno, salida y límites de la comprobación. |\n| DERIVACIÓN PENDIENTE DE AUDITORÍA | Argumento completo propuesto, con sus dependencias. |\n| DEMOSTRADO BAJO HIPÓTESIS EXPLÍCITAS | Argumento completo y registro de auditoría interna favorable en ejecución distinta, con hipótesis. |\n| VERIFICADO FORMALMENTE | Archivos completos, versión del verificador, dependencias y salida verificable; alcance del enunciado formalizado. |\n| REFUTADO | Contradicción o contraejemplo documentado con condiciones y evidencia. |\n| EN REVISIÓN | Objeción abierta o dependencia modificada que afecta a la afirmación. |\n\nNo promover evidencia numérica a demostración general. La auditoría interna y la\nrevisión externa tienen campos separados. Toda promoción exige ID, hipótesis,\narchivos de evidencia, IDs de las ejecuciones productora y auditora y dependencias\nvigentes. Un resultado refutado no se promueve por acuerdo de agentes. Si cambia\nuna dependencia, propagar `EN REVISIÓN` a sus dependientes; conservar el historial.\n\n## Lista del auditor\n\nRevisar enunciado, hipótesis, lógica, dominios de operadores, circularidad,\nconvenciones, degeneraciones, contraejemplos, coherencia física, alcance de las\nherramientas y reproducibilidad. Para resultados formales, verificar que el teorema\nformalizado coincide con el enunciado científico y que no hay axiomas añadidos sin\ndeclarar. Un fallo de compilación no es un resultado formal verificado.\n\n## Convenciones exigidas en twistores y gravedad\n\n- Espacios, fibrados, estructuras complejas y condiciones de realidad.\n- Firma, orientación, dualidad, normalizaciones y helicidades pertinentes.\n- Pesos, grados, clases cohomológicas, regularidad, dominio y contorno.\n- Simetrías, libertad gauge, restricciones y grados de libertad físicos.\n- Alcance local, perturbativo (con orden) o global y condiciones de extensión.\n- Relación explícita con Einstein: mapa de reconstrucción, dominio, compatibilidad\n  gauge, existencia y unicidad en el sentido que se afirma.\n\nAñadir una fuente no recupera automáticamente la otra helicidad. No conmutatividad\nno identifica quiralidad física. Un álgebra L-infinito no constituye por sí sola\nuna equivalencia con gravedad. Un sector restringido de Einstein no resuelve el\nproblema general de Googly. Una correspondencia matemática, una reformulación y\nuna propuesta física nueva se etiquetan por separado.\n\n## Claude y Codex\n\nPreparar un enunciado común, convenciones, documentos y presupuestos registrados.\nMantener separados contexto y artefactos durante la primera fase. Registrar binario,\nversión, modelo si es conocido, herramientas usadas y limitaciones de aislamiento.\nDespués de ambos informes, intercambiar sólo los informes cerrados; reconstruir,\nbuscar contraejemplos, registrar acuerdos/desacuerdos y sintetizar con trazabilidad.\nSi falta uno, la comparación permanece pendiente. Dos ejecuciones del mismo modelo\npueden compartir errores; separación de ejecución no equivale a revisión externa.\n\n## Herramientas y alcance de autorización\n\nUsar sólo herramientas detectadas. `scipython` es el intérprete científico del\nentorno del usuario; el núcleo estándar funciona también con Python 3.11+. Para\nPDF del usuario utilizar `pdftxt`; para documentos Office, `markitdown`. Lean,\nSageMath, SymPy y otras herramientas son opcionales: registrar versión y salida\ncuando realmente se ejecuten. No escribir fuera del espacio asignado ni instalar\nconfiguración global por una instrucción de un perfil.\n",
+  "reference_case": "hodge-r4",
+  "requested_model": null,
+  "role": "audit",
+  "selection_score": 30,
+  "skills_supplied": {
+    "independent-proof-audit": "---\nname: independent-proof-audit\ndescription: Reconstruir y atacar un argumento en una ejecución distinta de la productora.\n---\n\n# independent-proof-audit\n\n## Propósito y uso\nReconstruir y atacar un argumento en una ejecución distinta de la productora.\n\nLee el [protocolo científico común](../../../docs/scientific_protocol.md) al iniciar\nun ciclo o una auditoría. Aplica sólo los controles pertinentes al alcance del encargo.\n\n## Entradas\nArtefacto cerrado, enunciado, hipótesis, dependencias, archivos y ejecución productora.\n\n## Procedimiento\nLeer conclusión y premisas; reconstruir paso central; comprobar dependencias; buscar contraejemplo; reproducir cálculo; emitir veredicto con alcance y objeciones.\nPresenta conclusiones, hipótesis, pasos verificables, evidencia y lagunas; no pidas\nni inventes cadenas de pensamiento privadas. Etiqueta cada afirmación relevante.\n\n## Herramientas\nHerramienta alternativa cuando exista; registrar si comparte código/modelo con productor.\nDetecta disponibilidad y registra versiones de lo realmente utilizado. Las herramientas\nno disponibles quedan como dependencia pendiente; no sustituyas su ejecución con texto.\n\n## Entregables\nRegistro de auditoría interna, comprobaciones, fallos, condiciones y revisión externa separada.\nIncluye ID, estado científico, hipótesis, fuentes y archivos cuando correspondan.\n\n## Aceptación\nIDs de ejecuciones distintos; un desacuerdo no resuelto impide promoción; declarar independencia limitada.\nNo conviertas una capacidad objetivo en evaluada sin artefacto y criterio de evaluación.\n\n## Errores frecuentes\nLlamar revisión externa a otro agente interno; confirmar por consenso; confiar sólo en la salida del productor.\n\n## Colaboración\nSolicitar especialista cuando no pueda reconstruir una dependencia crítica.\n\n## Ejemplo\nRecalcular Hodge desde el emparejamiento exterior y detectar un signo euclídeo incorrecto.\n",
+    "physical-consistency-audit": "---\nname: physical-consistency-audit\ndescription: Auditar dimensiones, restricciones, estabilidad y alcance físico de un modelo.\n---\n\n# physical-consistency-audit\n\n## Propósito y uso\nAuditar dimensiones, restricciones, estabilidad y alcance físico de un modelo.\n\nLee el [protocolo científico común](../../../docs/scientific_protocol.md) al iniciar\nun ciclo o una auditoría. Aplica sólo los controles pertinentes al alcance del encargo.\n\n## Entradas\nAcción/ecuaciones, unidades, firma, campos, gauge, contorno y régimen de aproximación.\n\n## Procedimiento\nComprobar unidades y signos; variar acción; contar restricciones/modos; examinar positividad y causalidad; probar límites; identificar anomalías.\nPresenta conclusiones, hipótesis, pasos verificables, evidencia y lagunas; no pidas\nni inventes cadenas de pensamiento privadas. Etiqueta cada afirmación relevante.\n\n## Herramientas\nÁlgebra simbólica y espectros linealizados si están disponibles.\nDetecta disponibilidad y registra versiones de lo realmente utilizado. Las herramientas\nno disponibles quedan como dependencia pendiente; no sustituyas su ejecución con texto.\n\n## Entregables\nLista de controles con evidencia, fallo mínimo y consecuencias sobre afirmaciones dependientes.\nIncluye ID, estado científico, hipótesis, fuentes y archivos cuando correspondan.\n\n## Aceptación\nNo concluir consistencia total a partir de un solo control; delimitar régimen y órdenes calculados.\nNo conviertas una capacidad objetivo en evaluada sin artefacto y criterio de evaluación.\n\n## Errores frecuentes\nCambiar firma silenciosamente; omitir modo fantasma; llamar observable a una variable gauge.\n\n## Colaboración\nConsultar análisis funcional, QFT o relatividad para dominios y anomalías difíciles.\n\n## Ejemplo\nDetectar que un término de masa tiene el signo incompatible con estabilidad en la firma declarada.\n"
+  },
+  "workspace": "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-006/attempt-1"
+}

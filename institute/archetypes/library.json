@@ -1,0 +1,80 @@
+{
+  "archetypes": {
+    "dirac": {
+      "method": "operadores y restricciones",
+      "name": "Paul Dirac",
+      "observable": "contar restricciones y grados de libertad físicos",
+      "reference": null
+    },
+    "einstein": {
+      "method": "principios físicos y experimentos mentales",
+      "name": "Albert Einstein",
+      "observable": "enunciar principios y calcular un límite de correspondencia",
+      "reference": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/"
+    },
+    "feynman": {
+      "method": "representaciones y modelos calculables",
+      "name": "Richard Feynman",
+      "observable": "calcular un ejemplo y contrastarlo mediante otra representación",
+      "reference": null
+    },
+    "grothendieck": {
+      "method": "functorialidad y espacios de módulos",
+      "name": "Alexander Grothendieck",
+      "observable": "definir objetos, morfismos y propiedad universal pertinentes",
+      "reference": null
+    },
+    "hawking": {
+      "method": "geometría global y aproximación semiclásica",
+      "name": "Stephen Hawking",
+      "observable": "declarar causalidad, horizontes y el control de la aproximación",
+      "reference": "https://www.cam.ac.uk/stories/stephen-hawking"
+    },
+    "newman": {
+      "method": "espinores y tétradas nulas",
+      "name": "Ezra Ted Newman",
+      "observable": "fijar normalización nula y comprobar identidades espinoriales",
+      "reference": "https://www.physicsandastronomy.pitt.edu/ted-newman"
+    },
+    "noether": {
+      "method": "simetrías e invariantes",
+      "name": "Emmy Noether",
+      "observable": "derivar una identidad de simetría con hipótesis explícitas",
+      "reference": null
+    },
+    "penrose": {
+      "method": "geometría conforme y correspondencias",
+      "name": "Roger Penrose",
+      "observable": "escribir mapas, condiciones de integrabilidad y reconstrucción",
+      "reference": null
+    },
+    "poincare": {
+      "method": "topología, estabilidad y dinámica cualitativa",
+      "name": "Henri Poincaré",
+      "observable": "localizar una obstrucción global o un criterio de estabilidad",
+      "reference": null
+    },
+    "riemann": {
+      "method": "geometría y análisis",
+      "name": "Bernhard Riemann",
+      "observable": "relacionar un invariante geométrico con un cálculo local",
+      "reference": null
+    },
+    "von-neumann": {
+      "method": "estructuras operatoriales y algoritmos",
+      "name": "John von Neumann",
+      "observable": "especificar dominio de operadores y un procedimiento comprobable",
+      "reference": "https://www.ias.edu/von-neumann"
+    },
+    "weyl": {
+      "method": "grupos, espinores y conexiones gauge",
+      "name": "Hermann Weyl",
+      "observable": "identificar representaciones y comprobar covariancia",
+      "reference": null
+    }
+  },
+  "attribution": "Methods assigned by the institute; no impersonation, credentials, IQ scores or measured historical equivalence.",
+  "reference_status": "Provided biographical links identify referents; scientific claims require their own consulted primary references.",
+  "status": "methodological_design",
+  "version": "1.0.0"
+}

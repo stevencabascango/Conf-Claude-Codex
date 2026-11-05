@@ -1,0 +1,75 @@
+{
+  "genius": "0.1.0",
+  "python": "3.14.4",
+  "adapters": {
+    "reference": {
+      "available": true,
+      "kind": "deterministic-worker"
+    },
+    "claude": {
+      "available": true,
+      "kind": "llm-cli",
+      "authentication": "not tested",
+      "executable": "/home/asus/.local/bin/claude"
+    },
+    "codex": {
+      "available": true,
+      "kind": "llm-cli",
+      "authentication": "not tested",
+      "executable": "/home/asus/.npm-global/bin/codex"
+    }
+  },
+  "tools": {
+    "codex": {
+      "available": true,
+      "path": "/home/asus/.npm-global/bin/codex",
+      "version": "codex-cli 0.166.0"
+    },
+    "claude": {
+      "available": true,
+      "path": "/home/asus/.local/bin/claude",
+      "version": "2.1.318 (Claude Code)"
+    },
+    "scipython": {
+      "available": true,
+      "path": "/home/asus/.local/bin/scipython",
+      "version": "not probed"
+    },
+    "lean": {
+      "available": true,
+      "path": "/home/asus/.elan/bin/lean",
+      "version": "not probed"
+    },
+    "sage": {
+      "available": true,
+      "path": "/home/asus/.local/bin/sage",
+      "version": "not probed"
+    },
+    "Singular": {
+      "available": true,
+      "path": "/home/asus/.local/bin/Singular",
+      "version": "not probed"
+    },
+    "M2": {
+      "available": true,
+      "path": "/home/asus/.local/bin/M2",
+      "version": "not probed"
+    },
+    "pdftxt": {
+      "available": true,
+      "path": "/home/asus/.local/bin/pdftxt",
+      "version": "not probed"
+    },
+    "gh": {
+      "available": false,
+      "path": null,
+      "version": "not probed"
+    },
+    "git": {
+      "available": true,
+      "path": "/usr/bin/git",
+      "version": "git version 2.53.0"
+    }
+  },
+  "network_and_authentication": "Not tested; availability is not a successful model execution"
+}

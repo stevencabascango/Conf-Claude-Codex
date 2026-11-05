@@ -1,0 +1,582 @@
+{
+  "backend": "deterministic-reference",
+  "role": "audit",
+  "execution_id": "48085293-e2da-4061-a37e-501e9aff4a30",
+  "conventions": {
+    "space": "Lambda^2((R^4)^*)",
+    "metric": "diag(+1,+1,+1,+1)",
+    "signature": "Euclidean",
+    "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "field": "real; exact rational matrix entries",
+    "definition": "alpha wedge *beta = <alpha,beta> vol",
+    "regime": "single oriented inner-product vector space; no field equations",
+    "units": "dimensionless linear algebra in an orthonormal coframe"
+  },
+  "model": null,
+  "tools": [
+    "Python standard library",
+    "fractions.Fraction"
+  ],
+  "claims": [
+    {
+      "id": "HODGE-E4-AUDIT",
+      "statement": "Every supplied producer matches the independent exact reconstruction and conventions",
+      "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA",
+      "hypotheses": {
+        "space": "Lambda^2((R^4)^*)",
+        "metric": "diag(+1,+1,+1,+1)",
+        "signature": "Euclidean",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "field": "real; exact rational matrix entries",
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "producer_matches": true,
+        "independent_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "method": "invert wedge pairing by exact elimination; permutation determinants",
+        "checks": [
+          "execution provenance",
+          "conventions",
+          "basis",
+          "matrix",
+          "square",
+          "projector dimensions",
+          "attached claims"
+        ],
+        "verdict": "CONFIRMED_FINITE_FIXTURE",
+        "producer_execution_ids": [
+          "84915e41-5d82-4c25-a9f3-91ad060b4906",
+          "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+          "executions/task-002/attempt-1",
+          "executions/task-004/attempt-1"
+        ],
+        "producer_verdicts": [
+          {
+            "execution_id": "executions/task-002/attempt-1",
+            "role": "mathematics",
+            "checks": {
+              "execution_identity": true,
+              "conventions": true,
+              "evidence_present": true,
+              "matrix": true,
+              "basis": true,
+              "square": true,
+              "square_is_identity": true,
+              "self_dual_dimension": true,
+              "anti_self_dual_dimension": true,
+              "claims_present": true,
+              "claim_HODGE-E4-001": true,
+              "claim_HODGE-E4-002": true,
+              "no_unknown_claims": true,
+              "unique_execution_snapshot": true
+            },
+            "failed_checks": [],
+            "verdict": "CONFIRMED_FINITE_FIXTURE"
+          },
+          {
+            "execution_id": "84915e41-5d82-4c25-a9f3-91ad060b4906",
+            "role": "mathematics",
+            "checks": {
+              "execution_identity": true,
+              "conventions": true,
+              "evidence_present": true,
+              "matrix": true,
+              "basis": true,
+              "square": true,
+              "square_is_identity": true,
+              "self_dual_dimension": true,
+              "anti_self_dual_dimension": true,
+              "claims_present": true,
+              "claim_HODGE-E4-001": true,
+              "claim_HODGE-E4-002": true,
+              "no_unknown_claims": true,
+              "unique_execution_snapshot": true
+            },
+            "failed_checks": [],
+            "verdict": "CONFIRMED_FINITE_FIXTURE"
+          },
+          {
+            "execution_id": "executions/task-004/attempt-1",
+            "role": "computation",
+            "checks": {
+              "execution_identity": true,
+              "conventions": true,
+              "evidence_present": true,
+              "matrix": true,
+              "basis": true,
+              "square": true,
+              "square_is_identity": true,
+              "self_dual_dimension": true,
+              "anti_self_dual_dimension": true,
+              "claims_present": true,
+              "claim_HODGE-E4-001": true,
+              "claim_HODGE-E4-002": true,
+              "no_unknown_claims": true,
+              "unique_execution_snapshot": true
+            },
+            "failed_checks": [],
+            "verdict": "CONFIRMED_FINITE_FIXTURE"
+          },
+          {
+            "execution_id": "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+            "role": "computation",
+            "checks": {
+              "execution_identity": true,
+              "conventions": true,
+              "evidence_present": true,
+              "matrix": true,
+              "basis": true,
+              "square": true,
+              "square_is_identity": true,
+              "self_dual_dimension": true,
+              "anti_self_dual_dimension": true,
+              "claims_present": true,
+              "claim_HODGE-E4-001": true,
+              "claim_HODGE-E4-002": true,
+              "no_unknown_claims": true,
+              "unique_execution_snapshot": true
+            },
+            "failed_checks": [],
+            "verdict": "CONFIRMED_FINITE_FIXTURE"
+          }
+        ],
+        "reviewed_execution_ids": [
+          "84915e41-5d82-4c25-a9f3-91ad060b4906",
+          "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+          "executions/task-002/attempt-1",
+          "executions/task-004/attempt-1"
+        ],
+        "separate_task_call": true,
+        "process_isolation": "not established by benchmark backend alone",
+        "false_proposal_present": true,
+        "false_proposal_audit": {
+          "claim_id": "HODGE-E4-FALSE",
+          "input": "e1 wedge e2",
+          "actual_star_twice_coefficients": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "false_prediction_coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "difference": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "statement_and_hypotheses_match": true,
+          "submitted_statements": [
+            "*^2 = -I on real Euclidean two-forms in dimension four"
+          ],
+          "rejected": true,
+          "method": "apply independently reconstructed star twice to first basis vector"
+        }
+      },
+      "review_kind": "internal; separate execution required for promotion"
+    },
+    {
+      "id": "HODGE-E4-FALSE",
+      "statement": "*^2 = -I on real Euclidean two-forms in dimension four",
+      "status": "REFUTADO",
+      "hypotheses": {
+        "space": "Lambda^2((R^4)^*)",
+        "metric": "diag(+1,+1,+1,+1)",
+        "signature": "Euclidean",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "field": "real; exact rational matrix entries",
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "claim_id": "HODGE-E4-FALSE",
+        "input": "e1 wedge e2",
+        "actual_star_twice_coefficients": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "false_prediction_coefficients": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "difference": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "statement_and_hypotheses_match": true,
+        "submitted_statements": [
+          "*^2 = -I on real Euclidean two-forms in dimension four"
+        ],
+        "rejected": true,
+        "method": "apply independently reconstructed star twice to first basis vector"
+      },
+      "review_kind": "internal; exact submitted statement and hypotheses checked"
+    }
+  ],
+  "artifacts": [
+    "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-006/attempt-1/audit.json"
+  ],
+  "limitations": [
+    "Known finite-dimensional fixture; not an LLM research run.",
+    "Shared source code limits independence of internal checking.",
+    "No Einstein equations or Googly solution follows from this calculation."
+  ],
+  "summary": "Internal reconstruction completed.",
+  "evidence": {
+    "producer_matches": true,
+    "independent_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "method": "invert wedge pairing by exact elimination; permutation determinants",
+    "checks": [
+      "execution provenance",
+      "conventions",
+      "basis",
+      "matrix",
+      "square",
+      "projector dimensions",
+      "attached claims"
+    ],
+    "verdict": "CONFIRMED_FINITE_FIXTURE",
+    "producer_execution_ids": [
+      "84915e41-5d82-4c25-a9f3-91ad060b4906",
+      "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+      "executions/task-002/attempt-1",
+      "executions/task-004/attempt-1"
+    ],
+    "producer_verdicts": [
+      {
+        "execution_id": "executions/task-002/attempt-1",
+        "role": "mathematics",
+        "checks": {
+          "execution_identity": true,
+          "conventions": true,
+          "evidence_present": true,
+          "matrix": true,
+          "basis": true,
+          "square": true,
+          "square_is_identity": true,
+          "self_dual_dimension": true,
+          "anti_self_dual_dimension": true,
+          "claims_present": true,
+          "claim_HODGE-E4-001": true,
+          "claim_HODGE-E4-002": true,
+          "no_unknown_claims": true,
+          "unique_execution_snapshot": true
+        },
+        "failed_checks": [],
+        "verdict": "CONFIRMED_FINITE_FIXTURE"
+      },
+      {
+        "execution_id": "84915e41-5d82-4c25-a9f3-91ad060b4906",
+        "role": "mathematics",
+        "checks": {
+          "execution_identity": true,
+          "conventions": true,
+          "evidence_present": true,
+          "matrix": true,
+          "basis": true,
+          "square": true,
+          "square_is_identity": true,
+          "self_dual_dimension": true,
+          "anti_self_dual_dimension": true,
+          "claims_present": true,
+          "claim_HODGE-E4-001": true,
+          "claim_HODGE-E4-002": true,
+          "no_unknown_claims": true,
+          "unique_execution_snapshot": true
+        },
+        "failed_checks": [],
+        "verdict": "CONFIRMED_FINITE_FIXTURE"
+      },
+      {
+        "execution_id": "executions/task-004/attempt-1",
+        "role": "computation",
+        "checks": {
+          "execution_identity": true,
+          "conventions": true,
+          "evidence_present": true,
+          "matrix": true,
+          "basis": true,
+          "square": true,
+          "square_is_identity": true,
+          "self_dual_dimension": true,
+          "anti_self_dual_dimension": true,
+          "claims_present": true,
+          "claim_HODGE-E4-001": true,
+          "claim_HODGE-E4-002": true,
+          "no_unknown_claims": true,
+          "unique_execution_snapshot": true
+        },
+        "failed_checks": [],
+        "verdict": "CONFIRMED_FINITE_FIXTURE"
+      },
+      {
+        "execution_id": "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+        "role": "computation",
+        "checks": {
+          "execution_identity": true,
+          "conventions": true,
+          "evidence_present": true,
+          "matrix": true,
+          "basis": true,
+          "square": true,
+          "square_is_identity": true,
+          "self_dual_dimension": true,
+          "anti_self_dual_dimension": true,
+          "claims_present": true,
+          "claim_HODGE-E4-001": true,
+          "claim_HODGE-E4-002": true,
+          "no_unknown_claims": true,
+          "unique_execution_snapshot": true
+        },
+        "failed_checks": [],
+        "verdict": "CONFIRMED_FINITE_FIXTURE"
+      }
+    ],
+    "reviewed_execution_ids": [
+      "84915e41-5d82-4c25-a9f3-91ad060b4906",
+      "92dd83f3-aadd-49cb-9a90-04ce1c366b9e",
+      "executions/task-002/attempt-1",
+      "executions/task-004/attempt-1"
+    ],
+    "separate_task_call": true,
+    "process_isolation": "not established by benchmark backend alone",
+    "false_proposal_present": true,
+    "false_proposal_audit": {
+      "claim_id": "HODGE-E4-FALSE",
+      "input": "e1 wedge e2",
+      "actual_star_twice_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "false_prediction_coefficients": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "difference": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "statement_and_hypotheses_match": true,
+      "submitted_statements": [
+        "*^2 = -I on real Euclidean two-forms in dimension four"
+      ],
+      "rejected": true,
+      "method": "apply independently reconstructed star twice to first basis vector"
+    }
+  },
+  "reviewed": true
+}

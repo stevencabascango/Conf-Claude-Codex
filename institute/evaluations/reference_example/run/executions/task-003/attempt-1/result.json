@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-003/attempt-1/physics.json"
+  ],
+  "backend": "deterministic-reference",
+  "claims": [],
+  "conventions": {
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "definition": "alpha wedge *beta = <alpha,beta> vol",
+    "field": "real; exact rational matrix entries",
+    "metric": "diag(+1,+1,+1,+1)",
+    "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+    "regime": "single oriented inner-product vector space; no field equations",
+    "signature": "Euclidean",
+    "space": "Lambda^2((R^4)^*)",
+    "units": "dimensionless linear algebra in an orthonormal coframe"
+  },
+  "evidence": {
+    "gauge": "none in this finite vector-space fixture",
+    "physical_scope": "Algebraic self-duality; no gravitational helicity count or dynamics established.",
+    "signature_change": "With one negative metric direction, *^2=-I on 4D two-forms.",
+    "units": "dimensionless"
+  },
+  "execution_id": "executions/task-003/attempt-1",
+  "execution_status": "completed",
+  "limitations": [
+    "Known finite-dimensional fixture; not an LLM research run.",
+    "Shared source code limits independence of internal checking.",
+    "No Einstein equations or Googly solution follows from this calculation."
+  ],
+  "model": null,
+  "profile_id": "G5K-RG-0346",
+  "role": "physics",
+  "summary": "Signature and scope checked.",
+  "tools": [
+    "Python standard library",
+    "fractions.Fraction"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "artifacts": [
+    "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-001/attempt-1/conceptual.json"
+  ],
+  "backend": "deterministic-reference",
+  "claims": [],
+  "conventions": {
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "definition": "alpha wedge *beta = <alpha,beta> vol",
+    "field": "real; exact rational matrix entries",
+    "metric": "diag(+1,+1,+1,+1)",
+    "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+    "regime": "single oriented inner-product vector space; no field equations",
+    "signature": "Euclidean",
+    "space": "Lambda^2((R^4)^*)",
+    "units": "dimensionless linear algebra in an orthonormal coframe"
+  },
+  "evidence": {
+    "known_result": "Riemannian *^2=(-1)^(k(n-k)); specialize n=4,k=2.",
+    "question": "Determine the sign of *^2 and eigenspace dimensions on Euclidean 4D two-forms.",
+    "success": "Exact matrix square is I; projector ranks are 3; false-sign claim rejected."
+  },
+  "execution_id": "executions/task-001/attempt-1",
+  "execution_status": "completed",
+  "limitations": [
+    "Known finite-dimensional fixture; not an LLM research run.",
+    "Shared source code limits independence of internal checking.",
+    "No Einstein equations or Googly solution follows from this calculation."
+  ],
+  "model": null,
+  "profile_id": "G5K-RG-0361",
+  "role": "conceptual",
+  "summary": "Question and success criterion fixed before calculation.",
+  "tools": [
+    "Python standard library",
+    "fractions.Fraction"
+  ]
+}

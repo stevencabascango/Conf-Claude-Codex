@@ -1,0 +1,7 @@
+{
+  "brief_sha256": "b8ad77fb18f65b504ff0e8c63d2f563620daac205253b4c5616ad731727da0d6",
+  "limitations": "Different folders/contexts are administrative separation, not a security boundary or independent training.",
+  "phase": "independent-development",
+  "reports": {},
+  "status": "pending"
+}

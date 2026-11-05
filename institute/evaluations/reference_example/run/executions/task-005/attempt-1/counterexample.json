@@ -1,0 +1,113 @@
+{
+  "backend": "deterministic-reference",
+  "role": "counterexample",
+  "execution_id": "0bdf0256-6158-435a-84da-a06d26bcec06",
+  "conventions": {
+    "space": "Lambda^2((R^4)^*)",
+    "metric": "diag(+1,+1,+1,+1)",
+    "signature": "Euclidean",
+    "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "field": "real; exact rational matrix entries",
+    "definition": "alpha wedge *beta = <alpha,beta> vol",
+    "regime": "single oriented inner-product vector space; no field equations",
+    "units": "dimensionless linear algebra in an orthonormal coframe"
+  },
+  "model": null,
+  "tools": [
+    "Python standard library",
+    "fractions.Fraction"
+  ],
+  "claims": [
+    {
+      "id": "HODGE-E4-FALSE",
+      "statement": "*^2 = -I on real Euclidean two-forms in dimension four",
+      "status": "REFUTADO",
+      "hypotheses": {
+        "space": "Lambda^2((R^4)^*)",
+        "metric": "diag(+1,+1,+1,+1)",
+        "signature": "Euclidean",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "field": "real; exact rational matrix entries",
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "evidence": {
+        "input": "e1 wedge e2",
+        "star": "e3 wedge e4",
+        "star_twice": "e1 wedge e2",
+        "false_prediction": "-e1 wedge e2",
+        "difference_coefficient": 2
+      },
+      "review_kind": "internal; separate execution required for promotion"
+    }
+  ],
+  "artifacts": [
+    "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-005/attempt-1/counterexample.json"
+  ],
+  "limitations": [
+    "Known finite-dimensional fixture; not an LLM research run.",
+    "Shared source code limits independence of internal checking.",
+    "No Einstein equations or Googly solution follows from this calculation."
+  ],
+  "summary": "The deliberately false Euclidean claim *^2=-I is refuted by e1 wedge e2.",
+  "evidence": {
+    "input": "e1 wedge e2",
+    "star": "e3 wedge e4",
+    "star_twice": "e1 wedge e2",
+    "false_prediction": "-e1 wedge e2",
+    "difference_coefficient": 2
+  }
+}

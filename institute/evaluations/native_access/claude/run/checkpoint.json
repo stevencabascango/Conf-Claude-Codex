@@ -1,0 +1,76 @@
+{
+  "backend": "claude",
+  "budget": {
+    "concurrency": 1,
+    "max_calls": 1,
+    "max_input_bytes": 120000,
+    "max_output_bytes": 200000,
+    "max_seconds": 15,
+    "max_usd": 0.02,
+    "retries": 0,
+    "task_seconds": 8
+  },
+  "calls_started": 1,
+  "created": "2026-11-05T16:45:16.923304+00:00",
+  "max_concurrency_observed": 1,
+  "plan_sha256": "8ecc9a007e266f2126049f8e45291acbf536b04e041243cc19bffe03dd32e76c",
+  "schema_version": "1.0",
+  "seconds_consumed": 8.146454911009641,
+  "tasks": {
+    "task-001": {
+      "attempts": [
+        {
+          "command": [
+            "claude",
+            "--print",
+            "--output-format",
+            "json",
+            "--no-session-persistence",
+            "--max-budget-usd",
+            "0.02"
+          ],
+          "error": "RuntimeError: timeout",
+          "execution_id": "executions/task-001/attempt-1",
+          "finished": "2026-11-05T16:45:25.064777+00:00",
+          "number": 1,
+          "output_bytes": 0,
+          "output_limit_exceeded": false,
+          "pid": 10,
+          "process_identity": "15962373",
+          "process_started": true,
+          "returncode": -9,
+          "seconds": 8.056595091009513,
+          "started": "2026-11-05T16:45:16.923756+00:00",
+          "status": "failed",
+          "timed_out": true
+        }
+      ],
+      "error": "RuntimeError: timeout",
+      "status": "failed"
+    },
+    "task-002": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-003": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-004": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-005": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-006": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-007": {
+      "attempts": [],
+      "status": "pending"
+    }
+  }
+}

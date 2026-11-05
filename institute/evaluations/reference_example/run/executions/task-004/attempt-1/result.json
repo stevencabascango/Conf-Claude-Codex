@@ -1,0 +1,425 @@
+{
+  "artifacts": [
+    "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-004/attempt-1/computation.json"
+  ],
+  "backend": "deterministic-reference",
+  "claims": [
+    {
+      "evidence": {
+        "anti_self_dual_dimension": 3,
+        "arithmetic": "fractions.Fraction; no floating-point tolerance",
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "counterexample": {
+          "difference_coefficient": 2,
+          "false_prediction": "-e1 wedge e2",
+          "input": "e1 wedge e2",
+          "star": "e3 wedge e4",
+          "star_twice": "e1 wedge e2"
+        },
+        "matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "self_dual_dimension": 3,
+        "square": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "square_is_identity": true
+      },
+      "hypotheses": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "id": "HODGE-E4-001",
+      "review_kind": "internal; separate execution required for promotion",
+      "statement": "*^2 = I on Lambda^2((R^4)^*) for the declared Euclidean metric",
+      "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+    },
+    {
+      "evidence": {
+        "minus": 3,
+        "plus": 3
+      },
+      "hypotheses": {
+        "basis": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "definition": "alpha wedge *beta = <alpha,beta> vol",
+        "field": "real; exact rational matrix entries",
+        "metric": "diag(+1,+1,+1,+1)",
+        "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+        "regime": "single oriented inner-product vector space; no field equations",
+        "signature": "Euclidean",
+        "space": "Lambda^2((R^4)^*)",
+        "units": "dimensionless linear algebra in an orthonormal coframe"
+      },
+      "id": "HODGE-E4-002",
+      "review_kind": "internal; separate execution required for promotion",
+      "statement": "The real +1 and -1 eigenspaces each have dimension three",
+      "status": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+    }
+  ],
+  "conventions": {
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "definition": "alpha wedge *beta = <alpha,beta> vol",
+    "field": "real; exact rational matrix entries",
+    "metric": "diag(+1,+1,+1,+1)",
+    "orientation": "e1 wedge e2 wedge e3 wedge e4 positive",
+    "regime": "single oriented inner-product vector space; no field equations",
+    "signature": "Euclidean",
+    "space": "Lambda^2((R^4)^*)",
+    "units": "dimensionless linear algebra in an orthonormal coframe"
+  },
+  "evidence": {
+    "anti_self_dual_dimension": 3,
+    "arithmetic": "fractions.Fraction; no floating-point tolerance",
+    "basis": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "counterexample": {
+      "difference_coefficient": 2,
+      "false_prediction": "-e1 wedge e2",
+      "input": "e1 wedge e2",
+      "star": "e3 wedge e4",
+      "star_twice": "e1 wedge e2"
+    },
+    "matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "self_dual_dimension": 3,
+    "square": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "square_is_identity": true
+  },
+  "execution_id": "executions/task-004/attempt-1",
+  "execution_status": "completed",
+  "limitations": [
+    "Known finite-dimensional fixture; not an LLM research run.",
+    "Shared source code limits independence of internal checking.",
+    "No Einstein equations or Googly solution follows from this calculation."
+  ],
+  "model": null,
+  "profile_id": "G5K-COMPUTATION-0204",
+  "role": "computation",
+  "summary": "Exact six-dimensional Hodge-star calculation completed.",
+  "tools": [
+    "Python standard library",
+    "fractions.Fraction"
+  ]
+}

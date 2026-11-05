@@ -1,0 +1,221 @@
+{
+  "audits": [
+    {
+      "claim_id": "HODGE-E4-001",
+      "data": {
+        "artifact_hashes": {
+          "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-006/attempt-1/audit.json": "91754aa2bfa85e5a0c6dd98c7bda46820dabfa265dba70dde4f816c75949a12c"
+        },
+        "artifacts": [
+          "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-006/attempt-1/audit.json"
+        ],
+        "checks": {
+          "conventions": true,
+          "dependencies": true,
+          "hypotheses": true,
+          "limits": true,
+          "logic": true,
+          "physical_scope": true,
+          "statement": true,
+          "tool_scope": true
+        },
+        "limitations": "Finite exact reconstruction; shared source code; zero LLM research executions; no external review",
+        "recorded": "2026-11-05T16:47:16.546022+00:00",
+        "separation": "Distinct execution IDs; independence of model errors is not guaranteed"
+      },
+      "id": "HODGE-INTERNAL-001",
+      "producer_execution": "executions/task-002/attempt-1",
+      "reviewer_execution": "executions/task-006/attempt-1",
+      "revision": 1,
+      "scope": "internal",
+      "verdict": "confirmed"
+    }
+  ],
+  "claims": [
+    {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/mathematics.json"
+      ],
+      "dependencies": [
+        "HODGE-E4-001"
+      ],
+      "hypotheses": [
+        "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+        "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+      ],
+      "id": "HODGE-DIMENSIONS",
+      "revision": 1,
+      "sources": [
+        {
+          "id": "HODGE-DEFINITION",
+          "kind": "definition",
+          "statement": "alpha∧*beta=<alpha,beta>vol"
+        }
+      ],
+      "statement": "Each real eigenspace has dimension three for this fixture",
+      "status": "evidence",
+      "status_label": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+    },
+    {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/mathematics.json"
+      ],
+      "dependencies": [],
+      "hypotheses": [
+        "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+        "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+      ],
+      "id": "HODGE-E4-001",
+      "revision": 1,
+      "sources": [
+        {
+          "id": "HODGE-DEFINITION",
+          "kind": "definition",
+          "statement": "alpha∧*beta=<alpha,beta>vol"
+        }
+      ],
+      "statement": "For this declared six-dimensional fixture, *²=I",
+      "status": "evidence",
+      "status_label": "EVIDENCIA SIMBÓLICA O NUMÉRICA"
+    },
+    {
+      "artifacts": [
+        "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-005/attempt-1/counterexample.json"
+      ],
+      "dependencies": [],
+      "hypotheses": [
+        "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+        "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+      ],
+      "id": "HODGE-E4-FALSE",
+      "revision": 1,
+      "sources": [
+        {
+          "id": "HODGE-DEFINITION",
+          "kind": "definition",
+          "statement": "alpha∧*beta=<alpha,beta>vol"
+        }
+      ],
+      "statement": "For real Euclidean R4 two-forms, *²=-I",
+      "status": "refuted",
+      "status_label": "REFUTADO"
+    }
+  ],
+  "executions": [
+    {
+      "backend": "deterministic-reference",
+      "id": "executions/task-002/attempt-1",
+      "record_path": "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/result.json",
+      "role": "mathematics",
+      "sha256": "c9510285f32a3c9dca77b6b5eea47b8dd9dfdf0b718b8232aca9978bd620d2c6"
+    },
+    {
+      "backend": "deterministic-reference",
+      "id": "executions/task-006/attempt-1",
+      "record_path": "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-006/attempt-1/result.json",
+      "role": "audit",
+      "sha256": "e14895cad0c56d8ac5f43225f0e50e5b3907d8448b456498d054609cb78e689a"
+    }
+  ],
+  "history": [
+    {
+      "claim_id": "HODGE-E4-001",
+      "data": {
+        "artifacts": [
+          "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/mathematics.json"
+        ],
+        "dependencies": [],
+        "hypotheses": [
+          "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+          "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+        ],
+        "id": "HODGE-E4-001",
+        "revision": 1,
+        "sources": [
+          {
+            "id": "HODGE-DEFINITION",
+            "kind": "definition",
+            "statement": "alpha∧*beta=<alpha,beta>vol"
+          }
+        ],
+        "statement": "For this declared six-dimensional fixture, *²=I",
+        "status": "evidence"
+      },
+      "event": "created",
+      "recorded": "2026-11-05T16:47:16.536981+00:00",
+      "revision": 1,
+      "sequence": 1
+    },
+    {
+      "claim_id": "HODGE-E4-FALSE",
+      "data": {
+        "artifacts": [
+          "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-005/attempt-1/counterexample.json"
+        ],
+        "dependencies": [],
+        "hypotheses": [
+          "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+          "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+        ],
+        "id": "HODGE-E4-FALSE",
+        "revision": 1,
+        "sources": [
+          {
+            "id": "HODGE-DEFINITION",
+            "kind": "definition",
+            "statement": "alpha∧*beta=<alpha,beta>vol"
+          }
+        ],
+        "statement": "For real Euclidean R4 two-forms, *²=-I",
+        "status": "refuted"
+      },
+      "event": "created",
+      "recorded": "2026-11-05T16:47:16.552581+00:00",
+      "revision": 1,
+      "sequence": 2
+    },
+    {
+      "claim_id": "HODGE-DIMENSIONS",
+      "data": {
+        "artifacts": [
+          "/home/asus/Conf-Claude-Codex/institute/evaluations/reference_example/run/executions/task-002/attempt-1/mathematics.json"
+        ],
+        "dependencies": [
+          "HODGE-E4-001"
+        ],
+        "hypotheses": [
+          "Oriented Euclidean R4; metric diag(+1,+1,+1,+1)",
+          "Real two-forms; positive e1∧e2∧e3∧e4; orthonormal coframe"
+        ],
+        "id": "HODGE-DIMENSIONS",
+        "revision": 1,
+        "sources": [
+          {
+            "id": "HODGE-DEFINITION",
+            "kind": "definition",
+            "statement": "alpha∧*beta=<alpha,beta>vol"
+          }
+        ],
+        "statement": "Each real eigenspace has dimension three for this fixture",
+        "status": "evidence"
+      },
+      "event": "created",
+      "recorded": "2026-11-05T16:47:16.559739+00:00",
+      "revision": 1,
+      "sequence": 3
+    }
+  ],
+  "limits": "Audit records are attestations with linked evidence, not automatic proof checking.",
+  "schema_version": "1.0",
+  "states": {
+    "conjecture": "CONJETURA",
+    "established": "RESULTADO ESTABLECIDO",
+    "evidence": "EVIDENCIA SIMBÓLICA O NUMÉRICA",
+    "formal": "VERIFICADO FORMALMENTE",
+    "pending_audit": "DERIVACIÓN PENDIENTE DE AUDITORÍA",
+    "proposal": "PROPUESTA",
+    "proven": "DEMOSTRADO BAJO HIPÓTESIS EXPLÍCITAS",
+    "refuted": "REFUTADO",
+    "review": "EN REVISIÓN"
+  }
+}

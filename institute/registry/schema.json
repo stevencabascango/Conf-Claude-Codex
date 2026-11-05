@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "archetypes": {
+      "required": [
+        "primary",
+        "complementary",
+        "combination_rationale",
+        "status"
+      ],
+      "type": "object"
+    },
+    "collaboration_triggers": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "competence_limits": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "deliverables": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "division": {
+      "enum": [
+        "rg",
+        "lqg",
+        "strings",
+        "twistors",
+        "topology",
+        "algebraic_geometry",
+        "qft",
+        "categories",
+        "computation",
+        "integration"
+      ],
+      "minLength": 1,
+      "type": "string"
+    },
+    "evaluated_capabilities": {
+      "type": "array"
+    },
+    "evaluation_results": {
+      "type": "array"
+    },
+    "id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "knowledge": {
+      "required": [
+        "common_core_target",
+        "specialized_target",
+        "training_status"
+      ],
+      "type": "object"
+    },
+    "methods": {
+      "required": [
+        "primary",
+        "alternatives",
+        "compatibility_rationale"
+      ],
+      "type": "object"
+    },
+    "objects": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "pending_capabilities": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "problems": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "regime": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "review_responsibilities": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "selection_tags": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "specialty": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "subspecialties": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "target_capabilities": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "tools": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "version": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "division",
+    "specialty",
+    "subspecialties",
+    "competence_limits",
+    "archetypes",
+    "knowledge",
+    "objects",
+    "problems",
+    "methods",
+    "regime",
+    "tools",
+    "deliverables",
+    "review_responsibilities",
+    "collaboration_triggers",
+    "target_capabilities",
+    "evaluated_capabilities",
+    "pending_capabilities",
+    "evaluation_results",
+    "selection_tags",
+    "design_axes",
+    "status"
+  ],
+  "title": "GENIUS-5000 profile",
+  "type": "object"
+}

@@ -1,0 +1,77 @@
+{
+  "backend": "codex",
+  "budget": {
+    "concurrency": 1,
+    "max_calls": 1,
+    "max_input_bytes": 120000,
+    "max_output_bytes": 200000,
+    "max_seconds": 15,
+    "max_usd": null,
+    "retries": 0,
+    "task_seconds": 8
+  },
+  "calls_started": 1,
+  "created": "2026-11-05T16:45:25.209962+00:00",
+  "max_concurrency_observed": 1,
+  "plan_sha256": "bd2838e6338c1a6b832bb22308bb302d9b3f30cda6aae9f6f08936e2048acc48",
+  "schema_version": "1.0",
+  "seconds_consumed": 0.7726252190186642,
+  "tasks": {
+    "task-001": {
+      "attempts": [
+        {
+          "command": [
+            "codex",
+            "exec",
+            "--json",
+            "--ephemeral",
+            "--skip-git-repo-check",
+            "-C",
+            "/home/asus/Conf-Claude-Codex/institute/evaluations/native_access/codex/run/executions/task-001/attempt-1",
+            "-"
+          ],
+          "error": "RuntimeError: process exit 1",
+          "execution_id": "executions/task-001/attempt-1",
+          "finished": "2026-11-05T16:45:25.974130+00:00",
+          "number": 1,
+          "output_bytes": 197,
+          "output_limit_exceeded": false,
+          "pid": 143,
+          "process_identity": "15963205",
+          "process_started": true,
+          "returncode": 1,
+          "seconds": 0.6396004160051234,
+          "started": "2026-11-05T16:45:25.210487+00:00",
+          "status": "failed",
+          "timed_out": false
+        }
+      ],
+      "error": "RuntimeError: process exit 1",
+      "status": "failed"
+    },
+    "task-002": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-003": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-004": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-005": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-006": {
+      "attempts": [],
+      "status": "pending"
+    },
+    "task-007": {
+      "attempts": [],
+      "status": "pending"
+    }
+  }
+}

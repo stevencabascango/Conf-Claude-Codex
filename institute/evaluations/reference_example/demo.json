@@ -1,0 +1,60 @@
+{
+  "capabilities": {
+    "design_targets": "5000 research profiles",
+    "executed": "deterministic benchmark workers in separate processes",
+    "scientific_evaluations": 0
+  },
+  "comparison": {
+    "agreements": [],
+    "disagreements": [],
+    "missing_reports": [
+      "claude",
+      "codex"
+    ],
+    "next_step": "Complete and seal both reports; failures are not scientific reports.",
+    "status": "pending"
+  },
+  "execution": {
+    "agents_executed": 0,
+    "backend": "reference",
+    "blocked_tasks": [],
+    "budget": {
+      "concurrency": 2,
+      "max_calls": 14,
+      "max_input_bytes": 120000,
+      "max_output_bytes": 200000,
+      "max_seconds": 120,
+      "max_usd": null,
+      "retries": 1,
+      "task_seconds": 25
+    },
+    "calls_started": 7,
+    "completed_executions": 7,
+    "failed_tasks": {},
+    "limitations": [
+      "Reference workers are deterministic processes, not LLM researchers.",
+      "A completed review execution is not automatically a confirmed theorem.",
+      "Different executions may share the same algorithm/model and systematic errors."
+    ],
+    "llm_executions_unconfirmed": 0,
+    "max_concurrency_observed": 2,
+    "processes_executed": 7,
+    "registered_profiles": 5000,
+    "review_executions_completed": 1,
+    "reviewed_results": 1,
+    "scientific_capabilities_evaluated": 0,
+    "seconds_consumed": 1.2422747229866218,
+    "selected_profiles": 7,
+    "status": "completed",
+    "token_accounting": "Provider-reported usage in result artifacts; no invented token or USD guarantee"
+  },
+  "incorrect_proposal": "HODGE-E4-FALSE",
+  "invalidated_on_dependency_change": [
+    "HODGE-E4-001",
+    "HODGE-DIMENSIONS"
+  ],
+  "limits": "Known linear-algebra fixture; neither a new theorem nor a gravitational solution.",
+  "passed": true,
+  "producer_execution": "executions/task-002/attempt-1",
+  "reviewer_execution": "executions/task-006/attempt-1"
+}

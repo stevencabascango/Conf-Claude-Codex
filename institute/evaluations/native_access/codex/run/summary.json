@@ -1,0 +1,43 @@
+{
+  "agents_executed": 0,
+  "backend": "codex",
+  "blocked_tasks": [
+    "task-002",
+    "task-003",
+    "task-004",
+    "task-005",
+    "task-006",
+    "task-007"
+  ],
+  "budget": {
+    "concurrency": 1,
+    "max_calls": 1,
+    "max_input_bytes": 120000,
+    "max_output_bytes": 200000,
+    "max_seconds": 15,
+    "max_usd": null,
+    "retries": 0,
+    "task_seconds": 8
+  },
+  "calls_started": 1,
+  "completed_executions": 0,
+  "failed_tasks": {
+    "task-001": "RuntimeError: process exit 1"
+  },
+  "limitations": [
+    "Reference workers are deterministic processes, not LLM researchers.",
+    "A completed review execution is not automatically a confirmed theorem.",
+    "Different executions may share the same algorithm/model and systematic errors."
+  ],
+  "llm_executions_unconfirmed": 1,
+  "max_concurrency_observed": 1,
+  "processes_executed": 1,
+  "registered_profiles": 5000,
+  "review_executions_completed": 0,
+  "reviewed_results": 0,
+  "scientific_capabilities_evaluated": 0,
+  "seconds_consumed": 0.7726252190186642,
+  "selected_profiles": 3,
+  "status": "incomplete",
+  "token_accounting": "Provider-reported usage in result artifacts; no invented token or USD guarantee"
+}
